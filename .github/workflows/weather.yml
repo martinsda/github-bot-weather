@@ -29,6 +29,7 @@ jobs:
       id: weather
       env:
         OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+        OPENWEATHER_API_CITY: ${{ env.CITY }}
       run: |
         python weather_consumer.py
 
