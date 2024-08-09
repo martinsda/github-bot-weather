@@ -13,8 +13,9 @@ def get_weather(api_key, city):
 	else:
 		raise Exception(f"Failed to get weather data: {response.status_code}")
 
-def main(city):
+def main():
 	api_key = os.getenv('OPENWEATHER_API_KEY')
+	city = os.getenv('OPENWEATHER_CITY')
 	if api_key:
 		try:
 			weather_description, temperature = get_weather(api_key, city)
