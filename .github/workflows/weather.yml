@@ -35,5 +35,5 @@ jobs:
 
     - name: Display weather data
       run: |
-        echo "Weather in ${{ env.CITY }}: ${{ steps.weather.outputs.weather_description }}"
+        echo "Weather in ${{ env.OPENWEATHER_API_CITY }}: ${{ steps.weather.outputs.weather_description }}"
         echo "Temperature: ${{ steps.weather.outputs.temperature }}Cº"
