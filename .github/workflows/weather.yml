@@ -35,4 +35,4 @@ jobs:
     - name: Display weather data
       run: |
         echo "Weather Description: ${{ steps.weather.outputs.weather_description }}"
-        echo "Temperature: ${{ steps.weather.outputs.temperature }}K"
+        echo "Temperature: ${{ steps.weather.outputs.temperature }}Cº"
