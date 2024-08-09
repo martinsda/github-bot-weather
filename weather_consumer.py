@@ -3,7 +3,7 @@ import requests
 import os
 
 def get_weather(api_key, city):
-	url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
+	url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 	response = requests.get(url)
 	if response.status_code == 200:
 		data = response.json()
@@ -13,9 +13,8 @@ def get_weather(api_key, city):
 	else:
 		raise Exception(f"Failed to get weather data: {response.status_code}")
 
-def main():
+def main(city):
 	api_key = os.getenv('OPENWEATHER_API_KEY')
-	city = "Lisbon"
 	if api_key:
 		try:
 			weather_description, temperature = get_weather(api_key, city)
