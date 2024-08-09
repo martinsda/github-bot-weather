@@ -15,7 +15,7 @@ def get_weather(api_key, city):
 
 def main():
 	api_key = os.getenv('OPENWEATHER_API_KEY')
-	city = "London"
+	city = "Lisbon"
 	if api_key:
 		try:
 			weather_description, temperature = get_weather(api_key, city)
