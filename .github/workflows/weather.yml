@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
+    - cron: '0 7 * * *'  # Runs every day at 07
 
 jobs:
   run-weather-consumer:
