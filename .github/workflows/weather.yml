@@ -40,7 +40,7 @@ jobs:
         echo "Min. temperature: ${{ steps.weather.outputs.temp_min }}Cº"
         echo "Max. temperature: ${{ steps.weather.outputs.temp_max }}Cº"
         echo "Wind speed: ${{ steps.weather.outputs.wind_speed }} meter/sec"
-        wind_kmph = steps.weather.outputs.wind_speed*3.6
+        echo "Wind speed: ${{ steps.weather.outputs.wind_kmph }} km/h"
         echo "Wind speed: ${{ steps.weather.outputs.wind_kmph }} meter/sec"
         echo "Wind speed: ${{ steps.weather.outputs.wind_speed }} meter/sec"
         echo "Wind direction: ${{ steps.weather.outputs.wind_deg }}º"
