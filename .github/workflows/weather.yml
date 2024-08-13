@@ -36,10 +36,10 @@ jobs:
     - name: Display weather data
       run: |
         echo "Weather in ${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}" 
-        echo "Temperature: ${{ steps.weather.outputs.temp }}Cº"
+        echo "Temperature: ${{ steps.weather.outputs.temperature }}Cº"
         echo "Min. temperature: ${{ steps.weather.outputs.temp_min }}Cº"
         echo "Max. temperature: ${{ steps.weather.outputs.temp_max }}Cº"
         echo "Wind speed: ${{ steps.weather.outputs.wind_speed }} meter/sec"
-        echo "Wind speed: ${{ steps.weather.outputs.wind_kmph }} km/h"
+        echo "Wind speed: ${{ round(steps.weather.outputs.wind_kmph, 1) }} km/h"
         echo "Wind direction: ${{ steps.weather.outputs.wind_deg }}º"
         
