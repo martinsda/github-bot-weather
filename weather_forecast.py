@@ -1,6 +1,6 @@
 # weather_forecast.py
 import openmeteo_requests
-
+import os
 import requests_cache
 import pandas as pd
 from retry_requests import retry
