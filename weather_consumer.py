@@ -23,11 +23,13 @@ def main():
 	if api_key:
 		try:
 			weather_description, temperature,  temp_min, temp_max, wind_speed, wind_deg  = get_weather(api_key, city)
+			wind_kmph = wind_speed * 3.6
 			print(f"::set-output name=weather_description::{weather_description}")
 			print(f"::set-output name=temperature::{temperature}")
 			print(f"::set-output name=temperature::{temp_min}")
 			print(f"::set-output name=temperature::{temp_max}")
 			print(f"::set-output name=temperature::{wind_speed}")
+			print(f"::set-output name=temperature::{wind_kmph}")
 			print(f"::set-output name=temperature::{wind_deg}")
 		except Exception as e:
 			print(f"::error::{str(e)}")
