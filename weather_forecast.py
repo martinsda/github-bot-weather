@@ -64,7 +64,7 @@ def main():
     city_long = os.getenv('OPEN_METEO_CITY_LONG')
     if city_long:
       daily_dataframe = get_forecast_weather(city_lat, city_long)
-      print(f"::set-output name=weather_forecast_max_0::{daily_dataframe.temperature_2m_max.[0]}")
+      print(f"::set-output name=weather_forecast_max_0::{daily_dataframe.temperature_2m_max[0]}")
     else print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
   else:
     print("::error::Please set the OPEN_METEO_CITY_LAT environment variable.")
