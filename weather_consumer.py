@@ -12,8 +12,9 @@ def get_weather(api_key, city):
 		temp_min = data['main']['temp_min']
 		temp_max = data['main']['temp_max'] 
 		wind_speed = data['wind']['speed'] 
-		wind_deg = data['wind']['deg'] 
-		return weather_description, temperature, temp_min, temp_max, wind_speed, wind_deg
+		wind_deg = data['wind']['deg']
+		wind_kmph = wind_speed * 3.6
+		return weather_description, temperature, temp_min, temp_max, wind_speed, wind_deg, wind_kmph
 	else:
 		raise Exception(f"Failed to get weather data: {response.status_code}")
 
@@ -22,8 +23,7 @@ def main():
 	city = os.getenv('OPENWEATHER_CITY')
 	if api_key:
 		try:
-			weather_description, temperature,  temp_min, temp_max, wind_speed, wind_deg  = get_weather(api_key, city)
-			wind_kmph = wind_speed * 3.6
+			weather_description, temperature,  temp_min, temp_max, wind_speed, wind_deg, wind_kmph = get_weather(api_key, city)
 			print(f"::set-output name=weather_description::{weather_description}")
 			print(f"::set-output name=temperature::{temperature}")
 			print(f"::set-output name=temperature::{temp_min}")
