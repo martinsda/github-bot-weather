@@ -14,6 +14,7 @@ def get_weather(api_key, city):
 		wind_speed = data['wind']['speed'] 
 		wind_deg = data['wind']['deg']
 		wind_kmph = round(wind_speed * 3.6 , 1)
+		print("temperature", temperature)
 		return weather_description, temperature, temp_min, temp_max, wind_speed, wind_deg, wind_kmph
 	else:
 		raise Exception(f"Failed to get weather data: {response.status_code}")
