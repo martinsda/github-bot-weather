@@ -9,7 +9,11 @@ def get_weather(api_key, city):
 		data = response.json()
 		weather_description = data['weather'][0]['description']
 		temperature = data['main']['temp']
-		return weather_description, temperature
+		temp_min = data['main']['temp_min']
+		temp_max = data['main']['temp_max'] 
+		wind_speed = data['wind']['speed'] 
+		wind_deg = data['wind']['deg'] 
+		return weather_description, temperature, temp_min, temp_max, wind_speed, wind_deg
 	else:
 		raise Exception(f"Failed to get weather data: {response.status_code}")
 
