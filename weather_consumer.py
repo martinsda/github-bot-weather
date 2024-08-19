@@ -32,17 +32,13 @@ def main():
 		if city:
 			try:
 				weather_description, temperature,  temp_min, temp_max, wind_speed, wind_deg, wind_kmph = get_weather(api_key, city)
-				hello = 'hello'
-				hello2 = 'hello2'
-				set_action_output('TEST',hello)
-				set_action_output('TEST2',hello2)
-				print(f"::set-output name=weather_description::{weather_description}")
-				print(f"::set-output name=temperature::{temperature}")
-				print(f"::set-output name=temp_min::{temp_min}")
-				print(f"::set-output name=temp_max::{temp_max}")
-				print(f"::set-output name=wind_speed::{wind_speed}")
-				print(f"::set-output name=wind_kmph::{wind_kmph}")
-				print(f"::set-output name=wind_deg::{wind_deg}")
+				set_action_output('weather_description',weather_description)
+				set_action_output('temperature',temperature)
+				set_action_output('temp_min',temp_min)
+				set_action_output('temp_max',temp_max)
+				set_action_output('wind_speed',wind_speed)
+				set_action_output('wind_kmph',wind_kmph)
+				set_action_output('wind_deg',wind_deg)
 			except Exception as e:
 				print(f"::error::{str(e)}")
 		else:
