@@ -20,6 +20,11 @@ def get_weather(api_key, city):
 	else:
 		raise Exception(f"Failed to get weather data: {response.status_code}")
 
+def set_action_output(output_name, value) :
+    if "GITHUB_OUTPUT" in os.environ :
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f :
+            print("{0}={1}".format(output_name, value), file=f)
+		
 def main():
 	api_key = os.getenv('OPENWEATHER_API_KEY')
 	if api_key:
@@ -27,12 +32,8 @@ def main():
 		if city:
 			try:
 				weather_description, temperature,  temp_min, temp_max, wind_speed, wind_deg, wind_kmph = get_weather(api_key, city)
-				output_file = os.getenv('GITHUB_OUTPUT')
-				hello='hello'
-				hello2='hello2'
-				with open(output_file, "a") as myfile:
-    					myfile.write(f"TEST={hello}")
-					myfile.write(f"TEST2={hello2}")
+				set_action_output('hello',hello)
+				set_action_output('hello2',hello2)
 				print(f"::set-output name=weather_description::{weather_description}")
 				print(f"::set-output name=temperature::{temperature}")
 				print(f"::set-output name=temp_min::{temp_min}")
