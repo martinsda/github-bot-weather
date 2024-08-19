@@ -4,6 +4,7 @@ import os
 import requests_cache
 import pandas as pd
 from retry_requests import retry
+from datetime import datetime
 
 # Lisbon "latitude":  38.7167,
 #	"longitude": -9.1333,
@@ -64,9 +65,9 @@ def main():
         city_long = os.getenv('OPEN_METEO_CITY_LONG')
         if city_long:
             daily_dataframe = get_forecast_weather(city_lat, city_long)
-            print(f"::set-output name=weather_forecast_date_0::{daily_dataframe.date[0]}")
-            print(f"::set-output name=weather_forecast_max_0::{daily_dataframe.temperature_2m_max[0]}")
-            print(f"::set-output name=weather_forecast_min_0::{daily_dataframe.temperature_2m_min[0]}")
+            print(f"::set-output name=weather_forecast_date_0::{daily_dataframe.date[0].strftime('%A')}")
+            print(f"::set-output name=weather_forecast_max_0::{round(daily_dataframe.temperature_2m_max[0] , 1)}")
+            print(f"::set-output name=weather_forecast_min_0::{round(daily_dataframe.temperature_2m_min[0] , 1)}")
 	 
         else:
             print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
