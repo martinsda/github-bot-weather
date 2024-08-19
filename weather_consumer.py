@@ -32,6 +32,8 @@ def main():
 		if city:
 			try:
 				weather_description, temperature,  temp_min, temp_max, wind_speed, wind_deg, wind_kmph = get_weather(api_key, city)
+				hello = 'hello'
+				hello2 = 'hello2'
 				set_action_output('hello',hello)
 				set_action_output('hello2',hello2)
 				print(f"::set-output name=weather_description::{weather_description}")
