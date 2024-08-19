@@ -70,9 +70,9 @@ def main():
         city_long = os.getenv('OPEN_METEO_CITY_LONG')
         if city_long:
             daily_dataframe = get_forecast_weather(city_lat, city_long)
-	    set_action_output('weather_forecast_date_0',daily_dataframe.date[0].strftime('%A'))
-	    set_action_output('weather_forecast_max_0',round(daily_dataframe.temperature_2m_max[0] , 1))
-	    set_action_output('weather_forecast_min_0',round(daily_dataframe.temperature_2m_min[0] , 1))	 
+            set_action_output('weather_forecast_date_0',daily_dataframe.date[0].strftime('%A'))
+            set_action_output('weather_forecast_max_0',round(daily_dataframe.temperature_2m_max[0] , 1))
+            set_action_output('weather_forecast_min_0',round(daily_dataframe.temperature_2m_min[0] , 1))	 
         else:
             print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
     else:
