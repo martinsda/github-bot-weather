@@ -59,16 +59,20 @@ def get_forecast_weather(lat, long):
 	print(daily_dataframe)
 	return daily_dataframe 
 
+def set_action_output(output_name, value) :
+    if "GITHUB_OUTPUT" in os.environ :
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f :
+            print("{0}={1}".format(output_name, value), file=f)
+
 def main():
     city_lat = os.getenv('OPEN_METEO_CITY_LAT')
     if city_lat:
         city_long = os.getenv('OPEN_METEO_CITY_LONG')
         if city_long:
             daily_dataframe = get_forecast_weather(city_lat, city_long)
-            print(f"::set-output name=weather_forecast_date_0::{daily_dataframe.date[0].strftime('%A')}")
-            print(f"::set-output name=weather_forecast_max_0::{round(daily_dataframe.temperature_2m_max[0] , 1)}")
-            print(f"::set-output name=weather_forecast_min_0::{round(daily_dataframe.temperature_2m_min[0] , 1)}")
-	 
+	    set_action_output('weather_forecast_date_0',daily_dataframe.date[0].strftime('%A'))
+	    set_action_output('weather_forecast_max_0',round(daily_dataframe.temperature_2m_max[0] , 1))
+	    set_action_output('weather_forecast_min_0',round(daily_dataframe.temperature_2m_min[0] , 1))	 
         else:
             print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
     else:
