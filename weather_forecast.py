@@ -4,7 +4,7 @@ import os
 import requests_cache
 import pandas as pd
 from retry_requests import retry
-from datetime import datetime
+import datetime
 
 # Lisbon "latitude":  38.7167,
 #	"longitude": -9.1333,
@@ -42,6 +42,7 @@ def get_forecast_weather(lat, long):
 	daily_wind_gusts_10m_max = daily.Variables(6).ValuesAsNumpy()
 
 	daily_data = {"date": pd.date_range(
+          
 		start = pd.to_datetime(daily.Time(), unit = "s", utc = True),
 		end = pd.to_datetime(daily.TimeEnd(), unit = "s", utc = True),
 		freq = pd.Timedelta(seconds = daily.Interval()),
@@ -59,9 +60,9 @@ def get_forecast_weather(lat, long):
 	print(daily_dataframe)
 	return daily_dataframe 
 
-def set_action_output(output_name, value) :
-    if "GITHUB_OUTPUT" in os.environ :
-        with open(os.environ["GITHUB_OUTPUT"], "a") as f :
+def set_action_output(output_name, value):
+    if "GITHUB_OUTPUT" in os.environ:
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
             print("{0}={1}".format(output_name, value), file=f)
 
 def main():
@@ -70,29 +71,47 @@ def main():
         city_long = os.getenv('OPEN_METEO_CITY_LONG')
         if city_long:
             daily_dataframe = get_forecast_weather(city_lat, city_long)
-            set_action_output('weather_forecast_date_0',daily_dataframe.date[0].strftime('%A'))
-            set_action_output('weather_forecast_max_0',round(float(daily_dataframe.temperature_2m_max[0]) , 1))
-            set_action_output('weather_forecast_min_0',round(float(daily_dataframe.temperature_2m_min[0]) , 1))
-            set_action_output('weather_forecast_date_1',daily_dataframe.date[1].strftime('%A'))
-            set_action_output('weather_forecast_max_1',round(float(daily_dataframe.temperature_2m_max[1]) , 1))
-            set_action_output('weather_forecast_min_1',round(float(daily_dataframe.temperature_2m_min[1]) , 1))
-            set_action_output('weather_forecast_date_2',daily_dataframe.date[2].strftime('%A'))
-            set_action_output('weather_forecast_max_2',round(float(daily_dataframe.temperature_2m_max[2]) , 1))
-            set_action_output('weather_forecast_min_2',round(float(daily_dataframe.temperature_2m_min[2]) , 1))
-            set_action_output('weather_forecast_date_3',daily_dataframe.date[3].strftime('%A'))
-            set_action_output('weather_forecast_max_3',round(float(daily_dataframe.temperature_2m_max[3]) , 1))
-            set_action_output('weather_forecast_min_3',round(float(daily_dataframe.temperature_2m_min[3]) , 1))
-            set_action_output('weather_forecast_date_4',daily_dataframe.date[4].strftime('%A'))
-            set_action_output('weather_forecast_max_4',round(float(daily_dataframe.temperature_2m_max[4]) , 1))
-            set_action_output('weather_forecast_min_4',round(float(daily_dataframe.temperature_2m_min[4]) , 1))
-            set_action_output('weather_forecast_date_5',daily_dataframe.date[5].strftime('%A'))
-            set_action_output('weather_forecast_max_5',round(float(daily_dataframe.temperature_2m_max[5]) , 1))
-            set_action_output('weather_forecast_min_5',round(float(daily_dataframe.temperature_2m_min[5]) , 1))
+            set_action_output('weather_forecast_date_0', daily_dataframe.date[0].strftime('%A'))
+            set_action_output('weather_forecast_max_0', round(float(daily_dataframe.temperature_2m_max[0]), 1))
+            set_action_output('weather_forecast_min_0', round(float(daily_dataframe.temperature_2m_min[0]), 1))
+            if daily_dataframe.rain_sum[0] > 0:
+                set_action_output('weather_forecast_rain_0', "Rain :" daily_dataframe.rain_sum[0] " mm")
+            else:
+                set_action_output('weather_forecast_rain_0', "No rain")
+            set_action_output('weather_forecast_date_1', daily_dataframe.date[1].strftime('%A'))
+            set_action_output('weather_forecast_max_1', round(float(daily_dataframe.temperature_2m_max[1]), 1))
+            set_action_output('weather_forecast_min_1', round(float(daily_dataframe.temperature_2m_min[1]), 1))
+            if daily_dataframe.rain_sum[1] > 0:
+                set_action_output('weather_forecast_rain_1', "Rain :" daily_dataframe.rain_sum[1] " mm")
+            else:
+                set_action_output('weather_forecast_rain_1', "No rain")
+            set_action_output('weather_forecast_date_2', daily_dataframe.date[2].strftime('%A'))
+            set_action_output('weather_forecast_max_2', round(float(daily_dataframe.temperature_2m_max[2]), 1))
+            set_action_output('weather_forecast_min_2', round(float(daily_dataframe.temperature_2m_min[2]), 1))
+            if daily_dataframe.rain_sum[2] > 0:
+                set_action_output('weather_forecast_rain_2', "Rain :" daily_dataframe.rain_sum[2] " mm")
+            else:
+                set_action_output('weather_forecast_rain_2', "No rain")
+            set_action_output('weather_forecast_date_3', daily_dataframe.date[3].strftime('%A'))
+            set_action_output('weather_forecast_max_3', round(float(daily_dataframe.temperature_2m_max[3]), 1))
+            set_action_output('weather_forecast_min_3', round(float(daily_dataframe.temperature_2m_min[3]), 1))
+            if daily_dataframe.rain_sum[3] > 0:
+                set_action_output('weather_forecast_rain_3', "Rain :" daily_dataframe.rain_sum[3] " mm")
+            else:
+                set_action_output('weather_forecast_rain_3', "No rain")
+            set_action_output('weather_forecast_date_4', daily_dataframe.date[4].strftime('%A'))
+            set_action_output('weather_forecast_max_4', round(float(daily_dataframe.temperature_2m_max[4]), 1))
+            set_action_output('weather_forecast_min_4', round(float(daily_dataframe.temperature_2m_min[4]), 1))
+            if daily_dataframe.rain_sum[4] > 0:
+                set_action_output('weather_forecast_rain_4', "Rain :" daily_dataframe.rain_sum[4] " mm")
+            else:
+                set_action_output('weather_forecast_rain_4', "No rain")
+            set_action_output('weather_forecast_date_5', daily_dataframe.date[5].strftime('%A'))
+            set_action_output('weather_forecast_max_5', round(float(daily_dataframe.temperature_2m_max[5]), 1))
+            set_action_output('weather_forecast_min_5', round(float(daily_dataframe.temperature_2m_min[5]), 1))
+            if daily_dataframe.rain_sum[5] > 0:
+                set_action_output('weather_forecast_rain_5', "Rain :" daily_dataframe.rain_sum[5] " mm")
+            else:
+                set_action_output('weather_forecast_rain_5', "No rain")
         else:
             print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
-    else:
-        print("::error::Please set the OPEN_METEO_CITY_LAT environment variable.")
-
-
-if __name__ == "__main__":
-	main()
