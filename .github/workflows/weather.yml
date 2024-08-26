@@ -43,7 +43,7 @@ jobs:
       run: |
         python weather_forecast.py
 
-    - name: Run weather forecast script
+    - name: Run quote of the day script
       id: quote
       run: |
         python weather_quotes.py
@@ -65,7 +65,7 @@ jobs:
       with:
         message: |
           Quote of the day 💬💭:
-          ${{ steps.quote.outputsweather_quote }}.
+          ${{ steps.quote.outputs.weather_quote }}.
         twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
         twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
         twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
