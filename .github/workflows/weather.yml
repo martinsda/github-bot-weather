@@ -54,5 +54,18 @@ jobs:
         echo "Wind direction: ${{ steps.weather.outputs.wind_deg }}º"
         echo "Weather for ${{ steps.forecast.outputs.weather_forecast_date_0 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_0 }} Cº"
         echo "Weather for Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_0 }} Cº"
+
+    - name: Notify twitter
+    - uses: nearform-actions/github-action-notify-twitter@master
+      with:
+        message: |
+          Weather in ${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}
+          Temperature: ${{ steps.weather.outputs.temperature }}Cº / Min. temperature: ${{ steps.weather.outputs.temp_min }}Cº / Max. temperature: ${{ steps.weather.outputs.temp_max }}Cº
+        twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+        twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+        twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+
+
        
         
