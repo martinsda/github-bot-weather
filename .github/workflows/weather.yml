@@ -68,19 +68,6 @@ jobs:
         twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
         twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
 
-    - name: Forecast weather - Notify twitter
-      uses: nearform-actions/github-action-notify-twitter@master
-      with:
-        message: |
-          Forecast for ${{ vars.CITY }}:
-          ${{ steps.forecast.outputs.weather_forecast_date_1 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_1 }}Cº Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_1 }}Cº
-          ${{ steps.forecast.outputs.weather_forecast_date_2 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_2 }}Cº Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_2 }}Cº
-          ${{ steps.forecast.outputs.weather_forecast_date_3 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_3 }}Cº Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_3 }}Cº
-        twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-        twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-        twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-        twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
 
-
-       
+    
         
