@@ -115,3 +115,6 @@ def main():
                 set_action_output('weather_forecast_rain_5', "No rain")
         else:
             print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
+		
+if __name__ == "__main__":
+	main()
