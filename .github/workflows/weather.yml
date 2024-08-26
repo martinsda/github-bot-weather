@@ -56,7 +56,7 @@ jobs:
         echo "Weather for Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_0 }} Cº"
 
     - name: Notify twitter
-    - uses: nearform-actions/github-action-notify-twitter@master
+      uses: nearform-actions/github-action-notify-twitter@master
       with:
         message: |
           Weather in ${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}
