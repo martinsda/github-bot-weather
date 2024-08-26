@@ -1,6 +1,7 @@
 # weather_quotes.py
 
 import random
+import os
 
 # List of 100 weather-related quotes
 weather_quotes = [
@@ -111,9 +112,16 @@ weather_quotes = [
     "The rain falls on the just and the unjust. - Matthew 5:45"
 ]
 
+def set_action_output(output_name, value):
+    if "GITHUB_OUTPUT" in os.environ:
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+            print("{0}={1}".format(output_name, value), file=f)
+
 def get_random_weather_quote():
     """Returns a random weather-related quote."""
     return random.choice(weather_quotes)
 
 if __name__ == "__main__":
-    print(get_random_weather_quote())
+    quote = get_random_weather_quote()
+    print(quote)
+    set_action_output('weather_quote', quote)
