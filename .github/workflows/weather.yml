@@ -63,7 +63,7 @@ jobs:
           Temperature: ${{ steps.weather.outputs.temperature }}Cº / Min. temperature: ${{ steps.weather.outputs.temp_min }}Cº / Max. temperature: ${{ steps.weather.outputs.temp_max }}Cº
           Wind speed: ${{ steps.weather.outputs.wind_speed }}meters/sec / ${{ steps.weather.outputs.wind_kmph }}km/h 
           Wind direction: ${{ steps.weather.outputs.wind_deg }}º
-        twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+        tw3itter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
         twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
         twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
         twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
@@ -76,8 +76,6 @@ jobs:
           ${{ steps.forecast.outputs.weather_forecast_date_1 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_1 }}Cº Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_1 }}Cº
           ${{ steps.forecast.outputs.weather_forecast_date_2 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_2 }}Cº Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_2 }}Cº
           ${{ steps.forecast.outputs.weather_forecast_date_3 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_3 }}Cº Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_3 }}Cº
-          ${{ steps.forecast.outputs.weather_forecast_date_4 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_4 }}Cº Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_4 }}Cº
-          ${{ steps.forecast.outputs.weather_forecast_date_5 }}: Max. temperature: ${{ steps.forecast.outputs.weather_forecast_max_5 }}Cº Min. temperature: ${{ steps.forecast.outputs.weather_forecast_min_5 }}Cº
         twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
         twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
         twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
