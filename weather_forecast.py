@@ -75,42 +75,42 @@ def main():
             set_action_output('weather_forecast_max_0', round(float(daily_dataframe.temperature_2m_max[0]), 1))
             set_action_output('weather_forecast_min_0', round(float(daily_dataframe.temperature_2m_min[0]), 1))
             if daily_dataframe.rain_sum[0] > 0:
-                set_action_output('weather_forecast_rain_0', "Rain :" daily_dataframe.rain_sum[0] " mm")
+                set_action_output('weather_forecast_rain_0', "Rain :" + daily_dataframe.rain_sum[0] +" mm")
             else:
                 set_action_output('weather_forecast_rain_0', "No rain")
             set_action_output('weather_forecast_date_1', daily_dataframe.date[1].strftime('%A'))
             set_action_output('weather_forecast_max_1', round(float(daily_dataframe.temperature_2m_max[1]), 1))
             set_action_output('weather_forecast_min_1', round(float(daily_dataframe.temperature_2m_min[1]), 1))
             if daily_dataframe.rain_sum[1] > 0:
-                set_action_output('weather_forecast_rain_1', "Rain :" daily_dataframe.rain_sum[1] " mm")
+                set_action_output('weather_forecast_rain_1', "Rain :"+ daily_dataframe.rain_sum[1] +" mm")
             else:
                 set_action_output('weather_forecast_rain_1', "No rain")
             set_action_output('weather_forecast_date_2', daily_dataframe.date[2].strftime('%A'))
             set_action_output('weather_forecast_max_2', round(float(daily_dataframe.temperature_2m_max[2]), 1))
             set_action_output('weather_forecast_min_2', round(float(daily_dataframe.temperature_2m_min[2]), 1))
             if daily_dataframe.rain_sum[2] > 0:
-                set_action_output('weather_forecast_rain_2', "Rain :" daily_dataframe.rain_sum[2] " mm")
+                set_action_output('weather_forecast_rain_2', "Rain :"+ daily_dataframe.rain_sum[2]+ " mm")
             else:
                 set_action_output('weather_forecast_rain_2', "No rain")
             set_action_output('weather_forecast_date_3', daily_dataframe.date[3].strftime('%A'))
             set_action_output('weather_forecast_max_3', round(float(daily_dataframe.temperature_2m_max[3]), 1))
             set_action_output('weather_forecast_min_3', round(float(daily_dataframe.temperature_2m_min[3]), 1))
             if daily_dataframe.rain_sum[3] > 0:
-                set_action_output('weather_forecast_rain_3', "Rain :" daily_dataframe.rain_sum[3] " mm")
+                set_action_output('weather_forecast_rain_3', "Rain :"+ daily_dataframe.rain_sum[3] +" mm")
             else:
                 set_action_output('weather_forecast_rain_3', "No rain")
             set_action_output('weather_forecast_date_4', daily_dataframe.date[4].strftime('%A'))
             set_action_output('weather_forecast_max_4', round(float(daily_dataframe.temperature_2m_max[4]), 1))
             set_action_output('weather_forecast_min_4', round(float(daily_dataframe.temperature_2m_min[4]), 1))
             if daily_dataframe.rain_sum[4] > 0:
-                set_action_output('weather_forecast_rain_4', "Rain :" daily_dataframe.rain_sum[4] " mm")
+                set_action_output('weather_forecast_rain_4', "Rain :"+ daily_dataframe.rain_sum[4] +" mm")
             else:
                 set_action_output('weather_forecast_rain_4', "No rain")
             set_action_output('weather_forecast_date_5', daily_dataframe.date[5].strftime('%A'))
             set_action_output('weather_forecast_max_5', round(float(daily_dataframe.temperature_2m_max[5]), 1))
             set_action_output('weather_forecast_min_5', round(float(daily_dataframe.temperature_2m_min[5]), 1))
             if daily_dataframe.rain_sum[5] > 0:
-                set_action_output('weather_forecast_rain_5', "Rain :" daily_dataframe.rain_sum[5] " mm")
+                set_action_output('weather_forecast_rain_5', "Rain :"+ daily_dataframe.rain_sum[5] +" mm")
             else:
                 set_action_output('weather_forecast_rain_5', "No rain")
         else:
