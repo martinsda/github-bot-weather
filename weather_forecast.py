@@ -120,7 +120,7 @@ def main():
                 set_action_output('weather_forecast_rain_5', "Rain :"+ daily_dataframe.rain_sum[5] +" mm")
             else:
                 set_action_output('weather_forecast_rain_5', "No rain")
-            set_action_output('wind_speed_10m_5', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[5])) +">"+str(int(daily_dataframe.wind_gusts_10m_max[5])) +" km/h" + round(float(daily_dataframe.wind_direction_10m_dominant[5))]+"º")
+            set_action_output('wind_speed_10m_5', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[5])) +">"+str(int(daily_dataframe.wind_gusts_10m_max[5])) +" km/h" + round(float(daily_dataframe.wind_direction_10m_dominant[5]))+"º")
         else:
             print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
 		
