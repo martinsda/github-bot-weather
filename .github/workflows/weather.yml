@@ -89,12 +89,12 @@ jobs:
       uses: nearform-actions/github-action-notify-twitter@master
       with:
         message: |
-          Forecast for ${{ vars.CITY }}:
-          ${{ steps.forecast.outputs.weather_forecast_date_1 }}:
+          Forecast for ${{ vars.CITY }} 🏙️:
+          ${{ steps.forecast.outputs.weather_forecast_date_1 }} 📅:
           Max. temp: ${{ steps.forecast.outputs.weather_forecast_max_1 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_1 }} Cº ${{ steps.forecast.outputs.weather_forecast_rain_1 }} ${{ steps.forecast.outputs.wind_speed_10m_1 }}
-          ${{ steps.forecast.outputs.weather_forecast_date_2 }}: 
+          ${{ steps.forecast.outputs.weather_forecast_date_2 }} 📅: 
           Max. temp: ${{ steps.forecast.outputs.weather_forecast_max_2 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_2 }} Cº ${{ steps.forecast.outputs.weather_forecast_rain_2 }} ${{ steps.forecast.outputs.wind_speed_10m_2 }}
-          ${{ steps.forecast.outputs.weather_forecast_date_3 }}: 
+          ${{ steps.forecast.outputs.weather_forecast_date_3 }} 📅: 
           Max. temp: ${{ steps.forecast.outputs.weather_forecast_max_3 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_3 }} Cº ${{ steps.forecast.outputs.weather_forecast_rain_3 }} ${{ steps.forecast.outputs.wind_speed_10m_3 }}
         twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
         twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
