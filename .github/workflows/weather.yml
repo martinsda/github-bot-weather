@@ -1,9 +1,11 @@
 name: Weather Consumer
 
 on:
-  push:
-    branches:
-      - main
+  #push:
+  #  branches:
+  #    - main
+  release:
+    types: [published]
   schedule:
     - cron: '0 7 * * *'  # Runs every day at 07
 
@@ -76,7 +78,7 @@ jobs:
       with:
         message: |
           Weather in ${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}
-          Temperature: ${{ steps.weather.outputs.temperature }} Cº / Min.: ${{ steps.weather.outputs.temp_min }} Cº / Max.: ${{ steps.weather.outputs.temp_max }} Cº
+          Temperature: ${{ steps.weather.outputs.temperature }} Cº / Min.: ${{ steps.forecast.outputs.weather_forecast_min_0 }} Cº / Max.: ${{ steps.forecast.outputs.weather_forecast_max_0 }} Cº
           ${{ steps.forecast.outputs.weather_forecast_rain_0 }}
           Wind speed: ${{ steps.weather.outputs.wind_speed }} meters/sec => ${{ steps.weather.outputs.wind_kmph }} km/h 
           Wind direction: ${{ steps.weather.outputs.wind_deg }}º
