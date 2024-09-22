@@ -77,7 +77,7 @@ def main():
             set_action_output('weather_forecast_max_0', round(float(daily_dataframe.temperature_2m_max[0]), 1))
             set_action_output('weather_forecast_min_0', round(float(daily_dataframe.temperature_2m_min[0]), 1))
             if daily_dataframe.rain_sum[0] > 0:
-                set_action_output('weather_forecast_rain_0', "Rain :" + str(round(float(daily_dataframe.rain_sum[0]), 1))) +" mm")
+                set_action_output('weather_forecast_rain_0', "Rain :" + str(round(float(daily_dataframe.rain_sum[0]), 1)) +" mm")
             else:
                 set_action_output('weather_forecast_rain_0', "No rain")
             set_action_output('wind_speed_10m_0', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[0])) +" up to "+ str(int(daily_dataframe.wind_gusts_10m_max[0])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[0]))) +"º")
