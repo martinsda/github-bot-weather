@@ -73,20 +73,18 @@ jobs:
         twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
         twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
         
-    - name: Current weather - Notify twitter
+    - name: Forecast for today - Notify twitter
       uses: nearform-actions/github-action-notify-twitter@master
       with:
         message: |
-          Weather in ${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}
-          Temperature: ${{ steps.weather.outputs.temperature }} Cº / Max.: ${{ steps.forecast.outputs.weather_forecast_max_0 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_0 }} Cº
-          ${{ steps.forecast.outputs.weather_forecast_rain_0 }}
-          Wind speed: ${{ steps.weather.outputs.wind_speed }} meters/sec => ${{ steps.weather.outputs.wind_kmph }} km/h 
-          Wind direction: ${{ steps.weather.outputs.wind_deg }}º
+          Forecast for ${{ vars.CITY }} 🏙️:
+          Today 📅:
+          Max. temp: ${{ steps.forecast.outputs.weather_forecast_max_0 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_0 }} Cº ${{ steps.forecast.outputs.weather_forecast_rain_0 }} ${{ steps.forecast.outputs.wind_speed_10m_0 }}
         twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
         twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
         twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
         twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-
+        
     - name: Forecast weather - Notify twitter
       uses: nearform-actions/github-action-notify-twitter@master
       with:
@@ -98,6 +96,20 @@ jobs:
           Max. temp: ${{ steps.forecast.outputs.weather_forecast_max_2 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_2 }} Cº ${{ steps.forecast.outputs.weather_forecast_rain_2 }} ${{ steps.forecast.outputs.wind_speed_10m_2 }}
           ${{ steps.forecast.outputs.weather_forecast_date_3 }} 📅: 
           Max. temp: ${{ steps.forecast.outputs.weather_forecast_max_3 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_3 }} Cº ${{ steps.forecast.outputs.weather_forecast_rain_3 }} ${{ steps.forecast.outputs.wind_speed_10m_3 }}
+        twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+        twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+        twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+      
+    - name: Current weather - Notify twitter
+      uses: nearform-actions/github-action-notify-twitter@master
+      with:
+        message: |
+          Currently in ${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}
+          Temperature: ${{ steps.weather.outputs.temperature }} Cº / Max.: ${{ steps.forecast.outputs.weather_forecast_max_0 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_0 }} Cº
+          ${{ steps.forecast.outputs.weather_forecast_rain_0 }}
+          Wind speed: ${{ steps.weather.outputs.wind_speed }} meters/sec => ${{ steps.weather.outputs.wind_kmph }} km/h 
+          Wind direction: ${{ steps.weather.outputs.wind_deg }}º
         twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
         twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
         twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
