@@ -58,6 +58,7 @@ def main():
         city_long = os.getenv('OPEN_METEO_CITY_LONG')
         if city_long:
             hourly_dataframe = get_forecast_weather(city_lat, city_long)
+            from datetime import date
             now = datetime.now()
             if daily_dataframe.precipitation_sum[now.hour] > 0:
                     set_action_output('weather_forecast_rain_now_sum', "Rain: " + str(round(float(daily_dataframe.precipitation[now.hour]), 1)) +" mm")
