@@ -17,8 +17,8 @@ def get_forecast_weather(lat, long):
   # The order of variables in hourly or daily is important to assign them correctly below
   url = "https://api.open-meteo.com/v1/forecast"
   params = {
-  	"latitude": 52.52,
-  	"longitude": 13.41,
+  	"latitude": lat,
+  	"longitude": long,
   	"hourly": ["precipitation_probability", "precipitation"]
   }
   responses = openmeteo.weather_api(url, params=params)
