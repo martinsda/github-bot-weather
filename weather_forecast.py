@@ -78,14 +78,14 @@ def main():
             set_action_output('weather_forecast_date_0', daily_dataframe.date[0].strftime('%a'))
             set_action_output('weather_forecast_max_0', round(float(daily_dataframe.temperature_2m_max[0]), 1))
             set_action_output('weather_forecast_min_0', round(float(daily_dataframe.temperature_2m_min[0]), 1))
-        if daily_dataframe.precipitation_sum[0] > 0:
-                set_action_output('weather_forecast_rain_0', "Rain :" + str(round(float(daily_dataframe.precipitation_sum[0]), 1)) +" mm")
-        else:
-                set_action_output('weather_forecast_rain_0', "No rain")
-        if daily_dataframe.precipitation_probability_max[0] > 0:
-                set_action_output('weather_forecast_rainprob_0', "" + str(round(float(daily_dataframe.precipitation_probability_max[0]), 1)) +" %")
-        else:
-            set_action_output('weather_forecast_rainprob_0', "0%")
+            if daily_dataframe.precipitation_sum[0] > 0:
+                    set_action_output('weather_forecast_rain_0', "Rain :" + str(round(float(daily_dataframe.precipitation_sum[0]), 1)) +" mm")
+            else:
+                    set_action_output('weather_forecast_rain_0', "No rain")
+            if daily_dataframe.precipitation_probability_max[0] > 0:
+                    set_action_output('weather_forecast_rainprob_0', "" + str(round(float(daily_dataframe.precipitation_probability_max[0]), 1)) +" %")
+            else:
+                set_action_output('weather_forecast_rainprob_0', "0%")
             set_action_output('wind_speed_10m_0', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[0])) +" up to "+ str(int(daily_dataframe.wind_gusts_10m_max[0])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[0]))) +"º")
             set_action_output('weather_forecast_date_1', daily_dataframe.date[1].strftime('%a'))
             set_action_output('weather_forecast_max_1', round(float(daily_dataframe.temperature_2m_max[1]), 1))
@@ -127,8 +127,10 @@ def main():
             else:
                 set_action_output('weather_forecast_rain_5', "No rain")
             set_action_output('wind_speed_10m_5', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[5])) +" up to "+str(int(daily_dataframe.wind_gusts_10m_max[5])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[5])))+"º")
-    else:
+        else:
             print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
+    else:
+            print("::error::Please set the OPEN_METEO_CITY_LAT environment variable.")
 		
 if __name__ == "__main__":
 	main()
