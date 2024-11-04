@@ -52,8 +52,8 @@ jobs:
 
     - name: Display forecast data
       run: |
-        echo "Weather in ${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}" 
-        echo "Temperature: ${{ steps.weather.outputs.temperature }}Cº"
+        echo "Weather in #${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}" 
+        echo "#Temperature: ${{ steps.weather.outputs.temperature }}Cº"
         echo "Min. temperature: ${{ steps.weather.outputs.temp_min }}Cº"
         echo "Max. temperature: ${{ steps.weather.outputs.temp_max }}Cº"
         echo "Wind speed: ${{ steps.weather.outputs.wind_speed }} meter/sec"
