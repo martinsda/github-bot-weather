@@ -60,7 +60,7 @@ def main():
         if city_long:
             hourly_dataframe = get_forecast_weather(city_lat, city_long)
             now = dt.now()
-            print(f"hour now {now.hour)} ")
+            print(f"Hour now: {now.hour} ")
             if hourly_dataframe.precipitation[now.hour] > 0:
                     set_action_output('weather_forecast_rain_now_sum', "Rain: " + str(round(float(hourly_dataframe.precipitation[now.hour]), 1)) +" mm")
             else:
