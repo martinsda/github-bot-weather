@@ -20,7 +20,7 @@ def get_forecast_weather(lat, long):
 	params = {
 		"latitude": lat,
 		"longitude": long,
-		"daily": ["temperature_2m_max", "temperature_2m_min", "sunrise", "sunset", "rain_sum", "wind_speed_10m_max", "wind_gusts_10m_max", "wind_direction_10m_dominant"]
+		"daily": ["temperature_2m_max", "temperature_2m_min", "sunrise", "sunset", "precipitation_sum", "precipitation_probability_max", "wind_speed_10m_max", "wind_gusts_10m_max", "wind_direction_10m_dominant"]
 	}
 	responses = openmeteo.weather_api(url, params=params)
 
@@ -37,10 +37,11 @@ def get_forecast_weather(lat, long):
 	daily_temperature_2m_min = daily.Variables(1).ValuesAsNumpy()
 	daily_sunrise = daily.Variables(2).ValuesAsNumpy()
 	daily_sunset = daily.Variables(3).ValuesAsNumpy()
-	daily_rain_sum = daily.Variables(4).ValuesAsNumpy()
-	daily_wind_speed_10m_max = daily.Variables(5).ValuesAsNumpy()
-	daily_wind_gusts_10m_max = daily.Variables(6).ValuesAsNumpy()
-	daily_wind_direction_10m_dominant = daily.Variables(7).ValuesAsNumpy()
+	daily_precipitation_sum = daily.Variables(4).ValuesAsNumpy()
+	daily_precipitation_probability_max = daily.Variables(5).ValuesAsNumpy()
+	daily_wind_speed_10m_max = daily.Variables(6).ValuesAsNumpy()
+	daily_wind_gusts_10m_max = daily.Variables(7).ValuesAsNumpy()
+	daily_wind_direction_10m_dominant = daily.Variables(8).ValuesAsNumpy()
 
 	daily_data = {"date": pd.date_range(
           
@@ -53,7 +54,8 @@ def get_forecast_weather(lat, long):
 	daily_data["temperature_2m_min"] = daily_temperature_2m_min
 	daily_data["sunrise"] = daily_sunrise
 	daily_data["sunset"] = daily_sunset
-	daily_data["rain_sum"] = daily_rain_sum
+	daily_data["precipitation_sum"] = daily_precipitation_sum
+	daily_data["precipitation_probability_max"] = daily_precipitation_probability_max
 	daily_data["wind_speed_10m_max"] = daily_wind_speed_10m_max
 	daily_data["wind_gusts_10m_max"] = daily_wind_gusts_10m_max
 	daily_data["wind_direction_10m_dominant"] = daily_wind_direction_10m_dominant
@@ -76,48 +78,48 @@ def main():
             set_action_output('weather_forecast_date_0', daily_dataframe.date[0].strftime('%a'))
             set_action_output('weather_forecast_max_0', round(float(daily_dataframe.temperature_2m_max[0]), 1))
             set_action_output('weather_forecast_min_0', round(float(daily_dataframe.temperature_2m_min[0]), 1))
-            if daily_dataframe.rain_sum[0] > 0:
-                set_action_output('weather_forecast_rain_0', "Rain :" + str(round(float(daily_dataframe.rain_sum[0]), 1)) +" mm")
+            if daily_dataframe.precipitation_sum[0] > 0:
+                set_action_output('weather_forecast_rain_0', "Rain :" + str(round(float(daily_dataframe.precipitation_sum[0]), 1)) +" mm")
             else:
                 set_action_output('weather_forecast_rain_0', "No rain")
             set_action_output('wind_speed_10m_0', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[0])) +" up to "+ str(int(daily_dataframe.wind_gusts_10m_max[0])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[0]))) +"º")
             set_action_output('weather_forecast_date_1', daily_dataframe.date[1].strftime('%a'))
             set_action_output('weather_forecast_max_1', round(float(daily_dataframe.temperature_2m_max[1]), 1))
             set_action_output('weather_forecast_min_1', round(float(daily_dataframe.temperature_2m_min[1]), 1))
-            if daily_dataframe.rain_sum[1] > 0:
-                set_action_output('weather_forecast_rain_1', "Rain :"+ str(round(float(daily_dataframe.rain_sum[1]), 1)) +" mm")
+            if daily_dataframe.precipitation_sum[1] > 0:
+                set_action_output('weather_forecast_rain_1', "Rain :"+ str(round(float(daily_dataframe.precipitation_sum[1]), 1)) +" mm")
             else:
                 set_action_output('weather_forecast_rain_1', "No rain")
             set_action_output('wind_speed_10m_1', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[1])) +" up to "+str(int(daily_dataframe.wind_gusts_10m_max[1])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[1])))+"º")
             set_action_output('weather_forecast_date_2', daily_dataframe.date[2].strftime('%a'))
             set_action_output('weather_forecast_max_2', round(float(daily_dataframe.temperature_2m_max[2]), 1))
             set_action_output('weather_forecast_min_2', round(float(daily_dataframe.temperature_2m_min[2]), 1))
-            if daily_dataframe.rain_sum[2] > 0:
-                set_action_output('weather_forecast_rain_2', "Rain :"+ str(round(float(daily_dataframe.rain_sum[2]), 1))+ " mm")
+            if daily_dataframe.precipitation_sum[2] > 0:
+                set_action_output('weather_forecast_rain_2', "Rain :"+ str(round(float(daily_dataframe.precipitation_sum[2]), 1))+ " mm")
             else:
                 set_action_output('weather_forecast_rain_2', "No rain")
             set_action_output('wind_speed_10m_2', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[2])) +" up to "+str(int(daily_dataframe.wind_gusts_10m_max[2])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[2])))+"º")
             set_action_output('weather_forecast_date_3', daily_dataframe.date[3].strftime('%a'))
             set_action_output('weather_forecast_max_3', round(float(daily_dataframe.temperature_2m_max[3]), 1))
             set_action_output('weather_forecast_min_3', round(float(daily_dataframe.temperature_2m_min[3]), 1))
-            if daily_dataframe.rain_sum[3] > 0:
-                set_action_output('weather_forecast_rain_3', "Rain :"+ str(round(float(daily_dataframe.rain_sum[3]), 1)) +" mm")
+            if daily_dataframe.precipitation_sum[3] > 0:
+                set_action_output('weather_forecast_rain_3', "Rain :"+ str(round(float(daily_dataframe.precipitation_sum[3]), 1)) +" mm")
             else:
                 set_action_output('weather_forecast_rain_3', "No rain")
             set_action_output('wind_speed_10m_3', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[3])) +" up to "+str(int(daily_dataframe.wind_gusts_10m_max[3])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[3])))+"º")
             set_action_output('weather_forecast_date_4', daily_dataframe.date[4].strftime('%a'))
             set_action_output('weather_forecast_max_4', round(float(daily_dataframe.temperature_2m_max[4]), 1))
             set_action_output('weather_forecast_min_4', round(float(daily_dataframe.temperature_2m_min[4]), 1))
-            if daily_dataframe.rain_sum[4] > 0:
-                set_action_output('weather_forecast_rain_4', "Rain :"+ str(round(float(daily_dataframe.rain_sum[4]), 1))+" mm")
+            if daily_dataframe.precipitation_sum[4] > 0:
+                set_action_output('weather_forecast_rain_4', "Rain :"+ str(round(float(daily_dataframe.precipitation_sum[4]), 1))+" mm")
             else:
                 set_action_output('weather_forecast_rain_4', "No rain")
             set_action_output('wind_speed_10m_4', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[4])) +" up to "+str(int(daily_dataframe.wind_gusts_10m_max[4])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[4])))+"º")
             set_action_output('weather_forecast_date_5', daily_dataframe.date[5].strftime('%a'))
             set_action_output('weather_forecast_max_5', round(float(daily_dataframe.temperature_2m_max[5]), 1))
             set_action_output('weather_forecast_min_5', round(float(daily_dataframe.temperature_2m_min[5]), 1))
-            if daily_dataframe.rain_sum[5] > 0:
-                set_action_output('weather_forecast_rain_5', "Rain :"+ str(round(float(daily_dataframe.rain_sum[5]), 1)) +" mm")
+            if daily_dataframe.precipitation_sum[5] > 0:
+                set_action_output('weather_forecast_rain_5', "Rain :"+ str(round(float(daily_dataframe.precipitation_sum[5]), 1)) +" mm")
             else:
                 set_action_output('weather_forecast_rain_5', "No rain")
             set_action_output('wind_speed_10m_5', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[5])) +" up to "+str(int(daily_dataframe.wind_gusts_10m_max[5])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[5])))+"º")
