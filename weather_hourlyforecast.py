@@ -63,13 +63,13 @@ def main():
             now = dt.now()
             print(f"Hour now: {now.hour} ")
             if hourly_dataframe.precipitation[now.hour] > 0:
-                    set_action_output('weather_forecast_rain_now_sum', "Rain: " + str(round(float(hourly_dataframe.precipitation[now.hour]), 1)) +" mm")
+                    set_action_output('weather_forecast_rain_now_sum', "" + str(round(float(hourly_dataframe.precipitation[now.hour]), 1)) +" mm")
             else:
                     set_action_output('weather_forecast_rain_now_sum', "No rain")
             if hourly_dataframe.precipitation_probability[now.hour] > 0:
                     set_action_output('weather_forecast_rain_now_prob', "" + str(round(float(hourly_dataframe.precipitation_probability[now.hour]), 1)) +"%")
             else:
-                set_action_output('weather_forecast_rainprob_0', "0%")
+                set_action_output('weather_forecast_rain_now_prob', "0%")
         else:
             print("::error::Please set the OPEN_METEO_CITY_LONG environment variable.")
     else:
