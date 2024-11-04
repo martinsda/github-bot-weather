@@ -54,17 +54,17 @@ jobs:
       - run-hourly-weather-consumer
     if: needs.run-hourly-weather-consumer.outputs.rain == 'No rain' 
     steps:
-      - name: Current weather - Notify twitter
-        uses: nearform-actions/github-action-notify-twitter@master
-        with:
-          message: |
-            needs.run-hourly-weather-consumer.outputs.tweet_1
-            needs.run-hourly-weather-consumer.outputs.tweet_2
-            needs.run-hourly-weather-consumer.outputs.tweet_3
-          twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-          twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-          twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+    - name: Current weather - Notify twitter
+      uses: nearform-actions/github-action-notify-twitter@master
+      with:
+        message: |
+          needs.run-hourly-weather-consumer.outputs.tweet_1
+          needs.run-hourly-weather-consumer.outputs.tweet_2
+          needs.run-hourly-weather-consumer.outputs.tweet_3
+        twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+        twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+        twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
 
         
         
