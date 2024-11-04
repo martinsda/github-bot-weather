@@ -19,7 +19,8 @@ def get_forecast_weather(lat, long):
   params = {
   	"latitude": lat,
   	"longitude": long,
-  	"hourly": ["precipitation_probability", "precipitation"]
+  	"hourly": ["precipitation_probability", "precipitation"],
+	"forecast_days": 1
   }
   responses = openmeteo.weather_api(url, params=params)
   
