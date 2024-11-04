@@ -61,12 +61,12 @@ def main():
             hourly_dataframe = get_forecast_weather(city_lat, city_long)
             from datetime import date
             now = dt.now()
-            if daily_dataframe.precipitation_sum[now.hour] > 0:
-                    set_action_output('weather_forecast_rain_now_sum', "Rain: " + str(round(float(daily_dataframe.precipitation[now.hour]), 1)) +" mm")
+            if hourly_dataframe.precipitation_sum[now.hour] > 0:
+                    set_action_output('weather_forecast_rain_now_sum', "Rain: " + str(round(float(hourly_dataframe.precipitation[now.hour]), 1)) +" mm")
             else:
                     set_action_output('weather_forecast_rain_now_sum', "No rain")
-            if daily_dataframe.precipitation_probability_max[now.hour] > 0:
-                    set_action_output('weather_forecast_rain_now_prob', "" + str(round(float(daily_dataframe.precipitation_probability[now.hour]), 1)) +"%")
+            if hourly_dataframe.precipitation_probability_max[now.hour] > 0:
+                    set_action_output('weather_forecast_rain_now_prob', "" + str(round(float(hourly_dataframe.precipitation_probability[now.hour]), 1)) +"%")
             else:
                 set_action_output('weather_forecast_rainprob_0', "0%")
         else:
