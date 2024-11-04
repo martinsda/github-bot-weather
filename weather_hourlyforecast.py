@@ -65,7 +65,7 @@ def main():
                     set_action_output('weather_forecast_rain_now_sum', "Rain: " + str(round(float(hourly_dataframe.precipitation[now.hour]), 1)) +" mm")
             else:
                     set_action_output('weather_forecast_rain_now_sum', "No rain")
-            if hourly_dataframe.precipitation_probability_max[now.hour] > 0:
+            if hourly_dataframe.precipitation_probability[now.hour] > 0:
                     set_action_output('weather_forecast_rain_now_prob', "" + str(round(float(hourly_dataframe.precipitation_probability[now.hour]), 1)) +"%")
             else:
                 set_action_output('weather_forecast_rainprob_0', "0%")
