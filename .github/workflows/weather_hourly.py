@@ -10,7 +10,7 @@ on:
     - cron: '10 * * * *'  # Runs every hour at minute 10
 
 jobs:
-  run-weather-consumer:
+  run-hourly-weather-consumer:
     runs-on: ubuntu-latest
 
     steps:
