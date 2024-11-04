@@ -44,6 +44,9 @@ jobs:
         echo "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
     outputs:
       rain: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}
+      tweet_1: "Next hour in #${{ vars.CITY }} ☔ alert"
+      tweet_2: "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}"
+      tweet_3: "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
       
   send-hourly-weather-consumer:
     runs-on: ubuntu-latest
@@ -51,7 +54,18 @@ jobs:
       - run-hourly-weather-consumer
     if: needs.run-hourly-weather-consumer.rain == 'No rain' 
     steps:
-      - run: echo "Rains"
+      - name: Current weather - Notify twitter
+        uses: nearform-actions/github-action-notify-twitter@master
+        with:
+          message: |
+            needs.run-hourly-weather-consumer.tweet_1
+            needs.run-hourly-weather-consumer.tweet_2
+            needs.run-hourly-weather-consumer.tweet_3
+          twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+
         
         
     
