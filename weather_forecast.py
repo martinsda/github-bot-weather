@@ -83,7 +83,7 @@ def main():
             else:
                     set_action_output('weather_forecast_rain_0', "No rain")
             if daily_dataframe.precipitation_probability_max[0] > 0:
-                    set_action_output('weather_forecast_rainprob_0', "" + str(round(float(daily_dataframe.precipitation_probability_max[0]), 1)) +" %")
+                    set_action_output('weather_forecast_rainprob_0', "" + str(round(float(daily_dataframe.precipitation_probability_max[0]), 1)) +"%")
             else:
                 set_action_output('weather_forecast_rainprob_0', "0%")
             set_action_output('wind_speed_10m_0', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[0])) +" up to "+ str(int(daily_dataframe.wind_gusts_10m_max[0])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[0]))) +"º")
@@ -91,7 +91,7 @@ def main():
             set_action_output('weather_forecast_max_1', round(float(daily_dataframe.temperature_2m_max[1]), 1))
             set_action_output('weather_forecast_min_1', round(float(daily_dataframe.temperature_2m_min[1]), 1))
             if daily_dataframe.precipitation_sum[1] > 0:
-                set_action_output('weather_forecast_rain_1', "Rain :"+ str(round(float(daily_dataframe.precipitation_sum[1]), 1)) +" mm")
+                set_action_output('weather_forecast_rain_1', "Rain: "+ str(round(float(daily_dataframe.precipitation_sum[1]), 1)) +" mm")
             else:
                 set_action_output('weather_forecast_rain_1', "No rain")
             set_action_output('wind_speed_10m_1', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[1])) +" up to "+str(int(daily_dataframe.wind_gusts_10m_max[1])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[1])))+"º")
@@ -115,7 +115,7 @@ def main():
             set_action_output('weather_forecast_max_4', round(float(daily_dataframe.temperature_2m_max[4]), 1))
             set_action_output('weather_forecast_min_4', round(float(daily_dataframe.temperature_2m_min[4]), 1))
             if daily_dataframe.precipitation_sum[4] > 0:
-                set_action_output('weather_forecast_rain_4', "Rain :"+ str(round(float(daily_dataframe.precipitation_sum[4]), 1))+" mm")
+                set_action_output('weather_forecast_rain_4', "Rain: "+ str(round(float(daily_dataframe.precipitation_sum[4]), 1))+" mm")
             else:
                 set_action_output('weather_forecast_rain_4', "No rain")
             set_action_output('wind_speed_10m_4', "Wind: " + str(int(daily_dataframe.wind_speed_10m_max[4])) +" up to "+str(int(daily_dataframe.wind_gusts_10m_max[4])) +" km/h " + str(round(float(daily_dataframe.wind_direction_10m_dominant[4])))+"º")
