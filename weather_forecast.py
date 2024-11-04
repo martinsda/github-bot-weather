@@ -79,7 +79,7 @@ def main():
             set_action_output('weather_forecast_max_0', round(float(daily_dataframe.temperature_2m_max[0]), 1))
             set_action_output('weather_forecast_min_0', round(float(daily_dataframe.temperature_2m_min[0]), 1))
             if daily_dataframe.precipitation_sum[0] > 0:
-                    set_action_output('weather_forecast_rain_0', "Rain :" + str(round(float(daily_dataframe.precipitation_sum[0]), 1)) +" mm")
+                    set_action_output('weather_forecast_rain_0', "Rain: " + str(round(float(daily_dataframe.precipitation_sum[0]), 1)) +" mm")
             else:
                     set_action_output('weather_forecast_rain_0', "No rain")
             if daily_dataframe.precipitation_probability_max[0] > 0:
