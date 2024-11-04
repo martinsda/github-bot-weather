@@ -38,7 +38,7 @@ jobs:
         python weather_hourlyforecast.py
 
     - name: Display forecast data
-      if: ${{ steps.forecast.weather_forecast_rain_now_sum <> 'No rain' }}
+      if: ${{ steps.forecast.weather_forecast_rain_now_sum != 'No rain' }}
       run: |
         echo "Next hour in #${{ vars.CITY }} ☔ alert:
         echo "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }} mm"
