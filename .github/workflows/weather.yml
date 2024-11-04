@@ -95,6 +95,7 @@ jobs:
         message: |
           Forecast for ${{ vars.CITY }} 🏙️:
           Today 🗓️:
+          Rain probability: ${{steps.forecast.outputs.weather_forecast_rainprob_0}}
           Max. temp: ${{ steps.forecast.outputs.weather_forecast_max_0 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_0 }} Cº ${{ steps.forecast.outputs.weather_forecast_rain_0 }} ${{ steps.forecast.outputs.wind_speed_10m_0 }}
         twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
         twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
@@ -108,7 +109,6 @@ jobs:
         message: |
           Currently in ${{ vars.CITY }}: ${{ steps.weather.outputs.weather_description }}
           Temperature: ${{ steps.weather.outputs.temperature }} Cº / Max.: ${{ steps.forecast.outputs.weather_forecast_max_0 }} Cº Min.: ${{ steps.forecast.outputs.weather_forecast_min_0 }} Cº
-          ${{ steps.forecast.outputs.weather_forecast_rain_0 }}
           Wind speed: ${{ steps.weather.outputs.wind_speed }} meters/sec => ${{ steps.weather.outputs.wind_kmph }} km/h 
           Wind direction: ${{ steps.weather.outputs.wind_deg }}º
         twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
