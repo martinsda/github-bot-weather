@@ -36,6 +36,6 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Wind</th>
-        <td>{{ RAIN_PROBABILITY }}</td><td>11.2 kph</td><td>10.4 kph</td>
+        <td>1.2 kph</td><td>11.2 kph</td><td>10.4 kph</td>
     </tr>
 </table>
