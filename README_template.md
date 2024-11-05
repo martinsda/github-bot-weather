@@ -7,7 +7,7 @@ Also prints the output of weather APIs in this readme.md file!
 
 <div align="center">
 
-`{{ CITY }}, {{ COUNTRY }} - {{ DATE }} {{ TIME }}`
+`{{ CITY }}, {{ COUNTRY }} - {{ DATE_TIME }}`
 
 {{ CURR_WEATHER_CONDITIONS }}
 
