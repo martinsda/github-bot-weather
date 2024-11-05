@@ -2,6 +2,16 @@ import os
 import datetime
 from datetime import datetime as dt
 import pytz
+import json
+
+def get_weather_info(code):
+    with open('wmo_codes.json', 'r') as file:
+        wmo_data = json.load(file)
+    
+    if code in wmo_data:
+        return wmo_data[code]
+    else:
+        return {"description": "Unknown code", "image": ""}
 
 def replace_variables(template_path, output_path, variables):
     with open(template_path, 'r') as file:
@@ -18,11 +28,14 @@ if __name__ == "__main__":
     
     template_path = os.getenv('TEMPLATE_PATH')
     output_path = os.getenv('OUTPUT_PATH')
+    code =  os.getenv('WEATHER_CODE')
+    weather_info = get_weather_info(code)
     variables = {
         'CITY': os.getenv('CITY'),
         'COUNTRY': os.getenv('COUNTRY'),
         'DATE_TIME': now.strftime("%Y-%m-%d %H:%M:%S"),
-        'CURR_WEATHER_CONDITIONS': os.getenv('CURR_WEATHER_CONDITIONS'),
+        'CURR_WEATHER_CONDITIONS': weather_info['description'],
+        'CURR_WEATHER_IMAGE': weather_info['image'],
         'RAIN_FORECAST': os.getenv('RAIN_FORECAST'),
         'RAIN_PROBABILITY': os.getenv('RAIN_PROBABILITY'),
         'HOUR_NOW': os.getenv('HOUR_NOW'),
