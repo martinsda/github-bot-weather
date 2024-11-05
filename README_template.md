@@ -20,7 +20,7 @@ Also prints the output of weather APIs in this readme.md file!
 <table>
     <tr>
         <th>Hour</th>
-        <td>{{ HOUR_NOW }}</td><td>{{ HOUR_+1 }}</td><td>{{ HOUR_+2 }}</td>
+        <td>{{ HOUR_NOW }} Hours</td><td>{{ HOUR_+1 }} Hours</td><td>{{ HOUR_+2 }} Hours</td>
     </tr>
     <tr>
         <th>Weather</th>
