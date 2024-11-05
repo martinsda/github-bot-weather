@@ -9,7 +9,7 @@ def get_weather_info(code):
         wmo_data = json.load(file)
     
     if code in wmo_data:
-        return wmo_data[code]
+        return wmo_data[code]['day']
     else:
         return {"description": "Unknown code", "image": ""}
 
