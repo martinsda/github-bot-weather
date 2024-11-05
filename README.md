@@ -7,9 +7,9 @@ Also prints the output of weather APIs in this readme.md file!
 
 <div align="center">
 
-`Lisbon, Portugal - 2024-11-05 16:37:44`
+`Lisbon, Portugal - 2024-11-05 17:27:51`
 
-Raining
+Unknown code
 
 </div>
 
@@ -20,7 +20,7 @@ Raining
 <table>
     <tr>
         <th>Hour</th>
-        <td>16</td><td>17</td><td>18</td>
+        <td>17 Hours</td><td>18 Hours</td><td>19 Hours</td>
     </tr>
     <tr>
         <th>Weather</th>
@@ -32,7 +32,7 @@ Raining
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>No rain</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
+        <td>0%</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
     </tr>
     <tr>
         <th>Wind</th>
