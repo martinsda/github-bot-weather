@@ -64,7 +64,7 @@ def main():
             now = dt.now()
             print(f"Hour now: {now.hour} ")
             set_action_output('weather_forecast_now_hour', now.hour)
-            set_action_output('weather_forecast_now_weathercode', hourly_dataframe.weather_code[now.hour])
+            set_action_output('weather_forecast_now_weathercode', int(hourly_dataframe.weather_code[now.hour]))
             if hourly_dataframe.precipitation[now.hour] > 0:
                     set_action_output('weather_forecast_rain_now_sum', "" + str(round(float(hourly_dataframe.precipitation[now.hour]), 1)) +" mm")
             else:
