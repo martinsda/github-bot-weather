@@ -23,6 +23,11 @@ if __name__ == "__main__":
         'COUNTRY': os.getenv('COUNTRY'),
         'DATE_TIME': now.strftime("%Y-%m-%d %H:%M:%S"),
         'CURR_WEATHER_CONDITIONS': os.getenv('CURR_WEATHER_CONDITIONS'),
+        'RAIN_FORECAST': os.getenv('RAIN_FORECAST'),
+        'RAIN_PROBABILITY': os.getenv('RAIN_PROBABILITY'),
+        'HOUR_NOW': os.getenv('HOUR_NOW'),
+        'HOUR_+1': os.getenv('HOUR_NOW')+1,
+        'HOUR_+2': os.getenv('HOUR_NOW')+2,
         # Add more variables as needed
     }
     replace_variables(template_path, output_path, variables)
