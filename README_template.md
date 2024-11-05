@@ -12,3 +12,30 @@ Also prints the output of weather APIs in this readme.md file!
 {{ CURR_WEATHER_CONDITIONS }}
 
 </div>
+
+
+## Weather For Next 3 hours
+
+
+<table>
+    <tr>
+        <th>Hour</th>
+        <td>{{ HOUR_NOW }}</td><td>{{ HOUR_+1 }}</td><td>{{ HOUR_+2 }}</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/176.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td>
+    </tr>
+    <tr>
+        <th>Condition</th>
+        <td width="200px">Partly Cloudy </td><td width="200px">Patchy rain nearby</td><td width="200px">Partly Cloudy </td>
+    </tr>
+    <tr>
+        <th>Temperature</th>
+        <td>22.3 -  24.8 °C</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
+    </tr>
+    <tr>
+        <th>Wind</th>
+        <td>16.2 kph</td><td>11.2 kph</td><td>10.4 kph</td>
+    </tr>
+</table>
