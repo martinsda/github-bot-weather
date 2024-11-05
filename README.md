@@ -7,7 +7,7 @@ Also prints the output of weather APIs in this readme.md file!
 
 <div align="center">
 
-`Lisbon, Portugal - 2024-11-05 17:29:11`
+`Lisbon, Portugal - 2024-11-05 17:31:19`
 
 Unknown code
 
@@ -24,7 +24,11 @@ Unknown code
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/176.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td>
+        <td><img src=""/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/176.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td>
+    </tr>
+    <tr>
+        <th>Conditions</th>
+        <td>Unknown code</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -33,9 +37,5 @@ Unknown code
     <tr>
         <th>Rain probability</th>
         <td>0%</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
-    </tr>
-    <tr>
-        <th>Wind</th>
-        <td>1.2 kph</td><td>11.2 kph</td><td>10.4 kph</td>
     </tr>
 </table>
