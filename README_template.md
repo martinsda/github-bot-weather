@@ -27,15 +27,15 @@ Also prints the output of weather APIs in this readme.md file!
         <td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/176.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td>
     </tr>
     <tr>
-        <th>Condition</th>
-        <td width="200px">Partly Cloudy </td><td width="200px">Patchy rain nearby</td><td width="200px">Partly Cloudy </td>
+        <th>Rain forecast</th>
+        <td width="200px">{{ RAIN_FORECAST }}</td><td width="200px">Patchy rain nearby</td><td width="200px">Partly Cloudy </td>
     </tr>
     <tr>
-        <th>Temperature</th>
-        <td>22.3 -  24.8 °C</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
+        <th>Rain probability</th>
+        <td>>{{ RAIN_FORECAST }}</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
     </tr>
     <tr>
         <th>Wind</th>
-        <td>16.2 kph</td><td>11.2 kph</td><td>10.4 kph</td>
+        <td>{{ RAIN_PROBABILITY }}</td><td>11.2 kph</td><td>10.4 kph</td>
     </tr>
 </table>
