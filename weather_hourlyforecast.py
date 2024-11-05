@@ -19,7 +19,7 @@ def get_forecast_weather(lat, long):
   params = {
   	"latitude": lat,
   	"longitude": long,
-  	"hourly": ["precipitation_probability", "precipitation"],
+  	"hourly": ["precipitation_probability", "precipitation", "weather_code"],
 	"forecast_days": 1
   }
   responses = openmeteo.weather_api(url, params=params)
@@ -35,7 +35,8 @@ def get_forecast_weather(lat, long):
   hourly = response.Hourly()
   hourly_precipitation_probability = hourly.Variables(0).ValuesAsNumpy()
   hourly_precipitation = hourly.Variables(1).ValuesAsNumpy()
-  
+  hourly_weather_code = hourly.Variables(2).ValuesAsNumpy()
+	
   hourly_data = {"date": pd.date_range(
   	start = pd.to_datetime(hourly.Time(), unit = "s", utc = True),
   	end = pd.to_datetime(hourly.TimeEnd(), unit = "s", utc = True),
@@ -44,7 +45,7 @@ def get_forecast_weather(lat, long):
   )}
   hourly_data["precipitation_probability"] = hourly_precipitation_probability
   hourly_data["precipitation"] = hourly_precipitation
-  
+  hourly_data["weather_code"] = hourly_weather_code
   hourly_dataframe = pd.DataFrame(data = hourly_data)
   print(hourly_dataframe)
   return hourly_dataframe 
@@ -63,6 +64,7 @@ def main():
             now = dt.now()
             print(f"Hour now: {now.hour} ")
             set_action_output('weather_forecast_now_hour', now.hour)
+            set_action_output('weather_forecast_now_weathercode', "" + str(round(float(hourly_dataframe.weather_code[now.hour]), 1)) +" mm")
             if hourly_dataframe.precipitation[now.hour] > 0:
                     set_action_output('weather_forecast_rain_now_sum', "" + str(round(float(hourly_dataframe.precipitation[now.hour]), 1)) +" mm")
             else:
