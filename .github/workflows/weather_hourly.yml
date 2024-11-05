@@ -45,7 +45,7 @@ jobs:
         echo "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}"
         echo "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
     outputs:
-      hour_now: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}
+      hour_now: ${{ steps.forecast.outputs.weather_forecast_now_hour }}
       rain: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}
       rain_prob: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}
 #      tweet_1: "Next hour in #${{ vars.CITY }} ☔ alert"
