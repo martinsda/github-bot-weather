@@ -32,7 +32,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>>{{ RAIN_FORECAST }}</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
+        <td>{{ RAIN_FORECAST }}</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
     </tr>
     <tr>
         <th>Wind</th>
