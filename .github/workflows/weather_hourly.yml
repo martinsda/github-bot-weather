@@ -52,6 +52,8 @@ jobs:
 
   replace-variables:
     runs-on: ubuntu-latest
+    needs:
+      - run-hourly-weather-consumer
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -66,10 +68,12 @@ jobs:
     - name: Run replace_variables script
       env:
         TEMPLATE_PATH: 'README_template.md'
-        OUTPUT_PATH: 'output.md'
+        OUTPUT_PATH: 'README.md'
         CITY: 'Lisbon'
         COUNTRY: 'Portugal'
         CURR_WEATHER_CONDITIONS: 'Raining'
+        RAIN_FORECAST: "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}"
+        RAIN_PROBABILITY: "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
         # Add more environment variables as needed
       run: python replace_variables.py
     - name: Commit and push changes
@@ -81,6 +85,8 @@ jobs:
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        
 #  send-hourly-weather-consumer:
 #    runs-on: ubuntu-latest
 #    needs:
