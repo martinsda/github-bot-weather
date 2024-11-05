@@ -48,6 +48,7 @@ jobs:
       hour_now: ${{ steps.forecast.outputs.weather_forecast_now_hour }}
       rain: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}
       rain_prob: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}
+      weathercode: ${{ steps.forecast.outputs.weather_forecast_now_weathercode}}
 #      tweet_1: "Next hour in #${{ vars.CITY }} ☔ alert"
 #      tweet_2: "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}"
 #      tweet_3: "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
@@ -74,7 +75,7 @@ jobs:
         OUTPUT_PATH: 'README.md'
         CITY: 'Lisbon'
         COUNTRY: 'Portugal'
-        CURR_WEATHER_CONDITIONS: 'Raining'
+        WEATHER_CODE: ${{ needs.run-hourly-weather-consumer.outputs.weathercode }}
         RAIN_FORECAST: ${{ needs.run-hourly-weather-consumer.outputs.rain }}
         RAIN_PROBABILITY:  ${{ needs.run-hourly-weather-consumer.outputs.rain_prob }}
         HOUR_NOW: ${{ needs.run-hourly-weather-consumer.outputs.hour_now }}
