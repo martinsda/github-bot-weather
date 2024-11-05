@@ -72,8 +72,9 @@ jobs:
         CITY: 'Lisbon'
         COUNTRY: 'Portugal'
         CURR_WEATHER_CONDITIONS: 'Raining'
-        RAIN_FORECAST: "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}"
-        RAIN_PROBABILITY: "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
+        RAIN_FORECAST: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}
+        RAIN_PROBABILITY:  ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}
+        HOUR_NOW: ${{ steps.forecast.outputs.weather_forecast_now_hour }}
         # Add more environment variables as needed
       run: python replace_variables.py
     - name: Commit and push changes
