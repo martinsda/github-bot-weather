@@ -26,8 +26,8 @@ if __name__ == "__main__":
         'RAIN_FORECAST': os.getenv('RAIN_FORECAST'),
         'RAIN_PROBABILITY': os.getenv('RAIN_PROBABILITY'),
         'HOUR_NOW': os.getenv('HOUR_NOW'),
-        'HOUR_+1': os.getenv('HOUR_NOW')+1,
-        'HOUR_+2': os.getenv('HOUR_NOW')+2,
+        'HOUR_+1': int(os.getenv('HOUR_NOW', 0))+1,
+        'HOUR_+2': int(os.getenv('HOUR_NOW', 0))+2
         # Add more variables as needed
     }
     replace_variables(template_path, output_path, variables)
