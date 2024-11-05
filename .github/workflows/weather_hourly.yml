@@ -45,10 +45,12 @@ jobs:
         echo "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}"
         echo "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
     outputs:
+      hour_now: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}
       rain: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}
-      tweet_1: "Next hour in #${{ vars.CITY }} ☔ alert"
-      tweet_2: "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}"
-      tweet_3: "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
+      rain_prob: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}
+#      tweet_1: "Next hour in #${{ vars.CITY }} ☔ alert"
+#      tweet_2: "Rain forecast: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}"
+#      tweet_3: "Rain probability: ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}"
 
   replace-variables:
     runs-on: ubuntu-latest
@@ -72,9 +74,9 @@ jobs:
         CITY: 'Lisbon'
         COUNTRY: 'Portugal'
         CURR_WEATHER_CONDITIONS: 'Raining'
-        RAIN_FORECAST: ${{ steps.forecast.outputs.weather_forecast_rain_now_sum }}
-        RAIN_PROBABILITY:  ${{ steps.forecast.outputs.weather_forecast_rain_now_prob }}
-        HOUR_NOW: ${{ steps.forecast.outputs.weather_forecast_now_hour }}
+        RAIN_FORECAST: ${{ needs.run-hourly-weather-consumer.outputs.rain }}
+        RAIN_PROBABILITY:  ${{ needs.run-hourly-weather-consumer.outputs.rain_prob }}
+        HOUR_NOW: ${{ needs.run-hourly-weather-consumer.outputs.hour_now }}
         # Add more environment variables as needed
       run: python replace_variables.py
     - name: Commit and push changes
