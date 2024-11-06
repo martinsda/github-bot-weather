@@ -7,7 +7,7 @@ Also prints the output of weather APIs in this readme.md file!
 
 <div align="center">
 
-`Lisbon, Portugal - 2024-11-06 09:30:33`
+`Lisbon, Portugal - 2024-11-06 10:32:40`
 
 Cloudy
 
@@ -20,7 +20,7 @@ Cloudy
 <table>
     <tr>
         <th>Hour</th>
-        <td>9 Hours</td><td>10 Hours</td><td>11 Hours</td>
+        <td>10 Hours</td><td>11 Hours</td><td>12 Hours</td>
     </tr>
     <tr>
         <th>Weather</th>
