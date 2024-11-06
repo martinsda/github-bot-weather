@@ -7,9 +7,9 @@ Also prints the output of weather APIs in this readme.md file!
 
 <div align="center">
 
-`Lisbon, Portugal - 2024-11-06 11:22:53`
+`Lisbon, Portugal - 2024-11-06 12:49:47`
 
-Partly Cloudy
+Mainly Sunny
 
 </div>
 
@@ -20,15 +20,15 @@ Partly Cloudy
 <table>
     <tr>
         <th>Hour</th>
-        <td>11 Hours</td><td>12 Hours</td><td>13 Hours</td>
+        <td>12 Hours</td><td>13 Hours</td><td>14 Hours</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/176.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/01d@2x.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/176.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td>
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Partly Cloudy</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
+        <td>Mainly Sunny</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
     </tr>
     <tr>
         <th>Rain forecast</th>
