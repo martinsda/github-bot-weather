@@ -7,35 +7,57 @@ Also prints the output of weather APIs in this readme.md file!
 
 <div align="center">
 
+## Currently
 `{{ CITY }}, {{ COUNTRY }} - {{ DATE_TIME }}`
 
-{{ CURR_WEATHER_CONDITIONS }}
+<table>
+    <tr>
+        <th>Hour</th>
+        <td>{{ HOUR_NOW }} Hours</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ CURR_WEATHER_IMAGE }}"/></td>
+    </tr>
+    <tr>
+        <th>Conditions</th>
+        <td>{{ CURR_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Rain forecast</th>
+        <td width="200px">{{ RAIN_FORECAST }}</td>
+    </tr>
+    <tr>
+        <th>Rain probability</th>
+        <td>{{ RAIN_PROBABILITY }}</td>
+    </tr>
+</table>
 
 </div>
 
 
-## Weather For Next 3 hours
+## Weather forcast 6AM to 11PM
 
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>{{ HOUR_NOW }} Hours</td><td>{{ HOUR_+1 }} Hours</td><td>{{ HOUR_+2 }} Hours</td>
+        <td> 6AM </td><td> 7AM </td><td> 8AM </td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="{{ CURR_WEATHER_IMAGE }}"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/176.png"/></td><td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png"/></td>
+        <td><img src="{{ 6AM_WEATHER_IMAGE }}"/></td><td>{{ 7AM_WEATHER_IMAGE }}</td><td>{{ 8AM_WEATHER_IMAGE }}</td>
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>{{ CURR_WEATHER_CONDITIONS }}</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
+        <td>{{ 6AM_WEATHER_CONDITIONS }}</td><td>{{ 7AM_WEATHER_CONDITIONS }}</td><td>{{ 8AM_WEATHER_CONDITIONS }}</td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">{{ RAIN_FORECAST }}</td><td width="200px">Patchy rain nearby</td><td width="200px">Partly Cloudy </td>
+        <td width="200px">{{ 6AM_RAIN_FORECAST }}</td><td width="200px">{{ 7AM_RAIN_FORECAST }}</td><td width="200px">{{ 8AM_RAIN_FORECAST }}</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>{{ RAIN_PROBABILITY }}</td><td>21.6 -  25.4 °C</td><td>22 -  28.3 °C</td>
+        <td>{{ 6AM_RAIN_PROBABILITY }}</td><td>{{ 7AM_RAIN_PROBABILITY }}</td><td>{{ 8AM_RAIN_PROBABILITY }}</td>
     </tr>
 </table>
