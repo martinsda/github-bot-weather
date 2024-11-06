@@ -7,7 +7,7 @@ Also prints the output of weather APIs in this readme.md file!
 
 <div align="center">
 
-`Lisbon, Portugal - 2024-11-06 14:29:34`
+`Lisbon, Portugal - 2024-11-06 15:28:31`
 
 Mainly Sunny
 
@@ -20,7 +20,7 @@ Mainly Sunny
 <table>
     <tr>
         <th>Hour</th>
-        <td>14 Hours</td><td>15 Hours</td><td>16 Hours</td>
+        <td>15 Hours</td><td>16 Hours</td><td>17 Hours</td>
     </tr>
     <tr>
         <th>Weather</th>
