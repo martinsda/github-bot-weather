@@ -46,7 +46,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="{{ 6AM_WEATHER_IMAGE }}"/></td><td>{{ 7AM_WEATHER_IMAGE }}</td><td>{{ 8AM_WEATHER_IMAGE }}</td>
+        <td><img src="{{ 6AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 7AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 8AM_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Conditions</th>
