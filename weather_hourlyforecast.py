@@ -63,6 +63,7 @@ def main():
             hourly_dataframe = get_forecast_weather(city_lat, city_long)
             now = dt.now()
             print(f"Hour now: {now.hour} ")
+            print(f"weather_array: {hourly_dataframe.weather_code} ")
             set_action_output('weather_forecast_now_hour', now.hour)
             set_action_output('weather_forecast_now_weathercode', int(hourly_dataframe.weather_code[now.hour]))
             if hourly_dataframe.precipitation[now.hour] > 0:
