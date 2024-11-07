@@ -40,7 +40,7 @@ def get_forecast_weather(lat, long):
   
   # Process hourly data. The order of variables needs to be the same as requested.
   hourly = response.Hourly()
-  print(hourly)
+
   hourly_precipitation_probability = hourly.Variables(0).ValuesAsNumpy()
   hourly_precipitation = hourly.Variables(1).ValuesAsNumpy()
   hourly_weather_code = hourly.Variables(2).ValuesAsNumpy()
