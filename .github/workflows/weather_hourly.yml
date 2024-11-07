@@ -10,7 +10,9 @@ on:
   schedule:
     #- cron: '10 * * * *'  # Runs every hour at minute 10
     - cron: '10 6-20 * * *'  # At minute 10 past every hour from 6 through 20
-
+concurrency:
+  group: generate-json-files
+  
 jobs:
   run-hourly-weather-consumer:
     runs-on: ubuntu-latest
