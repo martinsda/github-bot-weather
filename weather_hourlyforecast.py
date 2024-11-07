@@ -6,7 +6,14 @@ import pandas as pd
 from retry_requests import retry
 import datetime
 from datetime import datetime as dt
+import json
 
+def writejson_data(data):
+    json_string = json.dumps(data, indent=4)
+    with open('weatherdata.json', 'w') as json_file:
+    	json_file.write(json_string)
+
+	    
 def get_forecast_weather(lat, long):
   # Setup the Open-Meteo API client with cache and retry on error
   cache_session = requests_cache.CachedSession('.cache', expire_after = 3600)
@@ -31,8 +38,6 @@ def get_forecast_weather(lat, long):
   print(f"Timezone difference to GMT+0 {response.UtcOffsetSeconds()} s")
   
   # Process hourly data. The order of variables needs to be the same as requested.
-  hourly = response.get('hourly', {})
-  print(hourly)
   hourly_precipitation_probability = hourly.Variables(0).ValuesAsNumpy()
   hourly_precipitation = hourly.Variables(1).ValuesAsNumpy()
   hourly_weather_code = hourly.Variables(2).ValuesAsNumpy()
@@ -48,6 +53,13 @@ def get_forecast_weather(lat, long):
   hourly_data["weather_code"] = hourly_weather_code
   hourly_dataframe = pd.DataFrame(data = hourly_data)
   print(hourly_dataframe)
+
+  json_data = {
+    "name": "John Doe",
+    "age": 30,
+    "city": "New York",
+    "skills": ["Python", "Data Analysis", "Machine Learning"]}
+  writejson_data(json_data)
   return hourly_dataframe 
 
 def set_action_output(output_name, value):
