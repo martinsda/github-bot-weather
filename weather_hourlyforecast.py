@@ -32,7 +32,7 @@ def get_forecast_weather(lat, long):
   print(f"Timezone difference to GMT+0 {response.UtcOffsetSeconds()} s")
   
   # Process hourly data. The order of variables needs to be the same as requested.
-  hourly = response.Hourly()
+  hourly = response.get('hourly', {})
   print(hourly)
   hourly_precipitation_probability = hourly.Variables(0).ValuesAsNumpy()
   hourly_precipitation = hourly.Variables(1).ValuesAsNumpy()
