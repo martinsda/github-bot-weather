@@ -29,6 +29,7 @@ def get_forecast_weather(lat, long):
   	"hourly": ["precipitation_probability", "precipitation", "weather_code"],
 	"forecast_days": 1
   }
+  responses = openmeteo.weather_api(url, params=params)
   
   # Process first location. Add a for-loop for multiple locations or weather models
   response = responses[0]
@@ -38,6 +39,8 @@ def get_forecast_weather(lat, long):
   print(f"Timezone difference to GMT+0 {response.UtcOffsetSeconds()} s")
   
   # Process hourly data. The order of variables needs to be the same as requested.
+  hourly = response.Hourly()
+  print(hourly)
   hourly_precipitation_probability = hourly.Variables(0).ValuesAsNumpy()
   hourly_precipitation = hourly.Variables(1).ValuesAsNumpy()
   hourly_weather_code = hourly.Variables(2).ValuesAsNumpy()
@@ -52,8 +55,6 @@ def get_forecast_weather(lat, long):
   hourly_data["precipitation"] = hourly_precipitation
   hourly_data["weather_code"] = hourly_weather_code
   hourly_dataframe = pd.DataFrame(data = hourly_data)
-  print(hourly_dataframe)
-
   json_data = {
     "name": "John Doe",
     "age": 30,
