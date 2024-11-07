@@ -22,7 +22,6 @@ def get_forecast_weather(lat, long):
   	"hourly": ["precipitation_probability", "precipitation", "weather_code"],
 	"forecast_days": 1
   }
-  responses = openmeteo.weather_api(url, params=params)
   
   # Process first location. Add a for-loop for multiple locations or weather models
   response = responses[0]
