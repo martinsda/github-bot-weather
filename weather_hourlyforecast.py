@@ -11,7 +11,7 @@ import json
 def writejson_data(data):
     json_string = json.dumps(data, indent=4)
     with open('weatherdata.json', 'w') as json_file:
-    	json_file.write(str(json_string))
+    	json_file.write(json_string)
 
 	    
 def get_forecast_weather(lat, long):
@@ -56,7 +56,30 @@ def get_forecast_weather(lat, long):
   hourly_data["weather_code"] = hourly_weather_code
   hourly_dataframe = pd.DataFrame(data = hourly_data)
   json_data = {
-    "precipitation_probability": [hourly_dataframe.precipitation_probability[0], hourly_dataframe.precipitation_probability[1], hourly_dataframe.precipitation_probability[2], hourly_dataframe.precipitation_probability[3], hourly_dataframe.precipitation_probability[4], hourly_dataframe.precipitation_probability[5], hourly_dataframe.precipitation_probability[6], hourly_dataframe.precipitation_probability[7], hourly_dataframe.precipitation_probability[8], hourly_dataframe.precipitation_probability[9], hourly_dataframe.precipitation_probability[10], hourly_dataframe.precipitation_probability[11], hourly_dataframe.precipitation_probability[12], hourly_dataframe.precipitation_probability[13], hourly_dataframe.precipitation_probability[14], hourly_dataframe.precipitation_probability[15], hourly_dataframe.precipitation_probability[16], hourly_dataframe.precipitation_probability[17], hourly_dataframe.precipitation_probability[18], hourly_dataframe.precipitation_probability[19], hourly_dataframe.precipitation_probability[20], hourly_dataframe.precipitation_probability[21], hourly_dataframe.precipitation_probability[22], hourly_dataframe.precipitation_probability[23]],
+    "precipitation_probability": [str(round(float(hourly_dataframe.precipitation_probability[0]), 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[1], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[2], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[3], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[4], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[5], 1)),  
+str(round(float(hourly_dataframe.precipitation_probability[6], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[7], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[8], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[9], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[10], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[11], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[12], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[13], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[14], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[15], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[16], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[17], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[18], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[19], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[20], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[21], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[22], 1)), 
+str(round(float(hourly_dataframe.precipitation_probability[23]],
     "precipitation": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "weather_code": [3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
   }
