@@ -57,7 +57,7 @@ def get_forecast_weather(lat, long):
   hourly_dataframe = pd.DataFrame(data = hourly_data)
   json_data = {
     "name": "John Doe",
-    "age": 31,
+    "age": 32,
     "city": "New York",
     "skills": ["Python", "Data Analysis", "Machine Learning"]}
   writejson_data(json_data)
