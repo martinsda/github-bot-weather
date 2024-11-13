@@ -92,7 +92,46 @@ if __name__ == "__main__":
         '2PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(13)[2])['image'],
         '2PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(13)[2])['description'],
         '2PM_RAIN_FORECAST': str(get_weather_response(13)[1]),
-        '2PM_RAIN_PROBABILITY': str(get_weather_response(13)[0])
+        '2PM_RAIN_PROBABILITY': str(get_weather_response(13)[0]),
+
+        '3PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(14)[2])['image'],
+        '3PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(14)[2])['description'],
+        '3PM_RAIN_FORECAST': str(get_weather_response(14)[1]),
+        '3PM_RAIN_PROBABILITY': str(get_weather_response(14)[0]),
+        '4PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(15)[2])['image'],
+        '4PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(15)[2])['description'],
+        '4PM_RAIN_FORECAST': str(get_weather_response(15)[1]),
+        '4PM_RAIN_PROBABILITY': str(get_weather_response(15)[0]),
+        '5PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(16)[2])['image'],
+        '5PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(16)[2])['description'],
+        '5PM_RAIN_FORECAST': str(get_weather_response(16)[1]),
+        '5PM_RAIN_PROBABILITY': str(get_weather_response(16)[0]),
+
+        '6PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(17)[2])['image'],
+        '6PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(17)[2])['description'],
+        '6PM_RAIN_FORECAST': str(get_weather_response(17)[1]),
+        '6PM_RAIN_PROBABILITY': str(get_weather_response(17)[0]),
+        '7PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(18)[2])['image'],
+        '7PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(18)[2])['description'],
+        '7PM_RAIN_FORECAST': str(get_weather_response(18)[1]),
+        '7PM_RAIN_PROBABILITY': str(get_weather_response(18)[0]),
+        '8PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(19)[2])['image'],
+        '8PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(19)[2])['description'],
+        '8PM_RAIN_FORECAST': str(get_weather_response(19)[1]),
+        '8PM_RAIN_PROBABILITY': str(get_weather_response(19)[0]),
+
+        '9PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(20)[2])['image'],
+        '9PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(20)[2])['description'],
+        '9PM_RAIN_FORECAST': str(get_weather_response(20)[1]),
+        '9PM_RAIN_PROBABILITY': str(get_weather_response(20)[0]),
+        '10PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(21)[2])['image'],
+        '10PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(21)[2])['description'],
+        '10PM_RAIN_FORECAST': str(get_weather_response(21)[1]),
+        '10PM_RAIN_PROBABILITY': str(get_weather_response(21)[0]),
+        '11PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(22)[2])['image'],
+        '11PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(22)[2])['description'],
+        '11PM_RAIN_FORECAST': str(get_weather_response(22)[1]),
+        '11PM_RAIN_PROBABILITY': str(get_weather_response(22)[0])
         
         # Add more variables as needed
     }
