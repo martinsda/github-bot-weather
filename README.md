@@ -8,7 +8,7 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2024-11-13 17:07:46`
+`Lisbon, Portugal - 2024-11-13 17:20:07`
 
 <table>
     <tr>
@@ -46,7 +46,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="{{ 6AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 7AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 8AM_WEATHER_IMAGE }}"/></td>
+        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="{{ 7AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 8AM_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Conditions</th>
@@ -54,7 +54,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">{{ 6AM_RAIN_FORECAST }}</td><td width="200px">{{ 7AM_RAIN_FORECAST }}</td><td width="200px">{{ 8AM_RAIN_FORECAST }}</td>
+        <td width="200px">('0',)</td><td width="200px">{{ 7AM_RAIN_FORECAST }}</td><td width="200px">{{ 8AM_RAIN_FORECAST }}</td>
     </tr>
     <tr>
         <th>Rain probability</th>
