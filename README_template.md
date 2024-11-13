@@ -54,10 +54,10 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">{{ 6AM_RAIN_FORECAST }}</td><td width="200px">{{ 7AM_RAIN_FORECAST }}</td><td width="200px">{{ 8AM_RAIN_FORECAST }}</td>
+        <td width="200px">{{ 6AM_RAIN_FORECAST }} mm</td><td width="200px">{{ 7AM_RAIN_FORECAST }} mm</td><td width="200px">{{ 8AM_RAIN_FORECAST }} mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>{{ 6AM_RAIN_PROBABILITY }}</td><td>{{ 7AM_RAIN_PROBABILITY }}</td><td>{{ 8AM_RAIN_PROBABILITY }}</td>
+        <td>{{ 6AM_RAIN_PROBABILITY }}%</td><td>{{ 7AM_RAIN_PROBABILITY }}%</td><td>{{ 8AM_RAIN_PROBABILITY }}%</td>
     </tr>
 </table>
