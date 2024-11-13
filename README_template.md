@@ -45,12 +45,12 @@ Also prints the output of weather APIs in this readme.md file!
         <td> 6AM </td><td> 7AM </td><td> 8AM </td>
     </tr>
     <tr>
-        <th>Weather</th>
-        <td><img src="{{ 6AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 7AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 8AM_WEATHER_IMAGE }}"/></td>
-    </tr>
-    <tr>
         <th>Conditions</th>
         <td>{{ 6AM_WEATHER_CONDITIONS }}</td><td>{{ 7AM_WEATHER_CONDITIONS }}</td><td>{{ 8AM_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ 6AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 7AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 8AM_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
