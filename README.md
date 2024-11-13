@@ -8,7 +8,7 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2024-11-13 18:12:44`
+`Lisbon, Portugal - 2024-11-13 18:16:30`
 
 <table>
     <tr>
@@ -54,10 +54,10 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">('0',)</td><td width="200px">{{ 7AM_RAIN_FORECAST }}</td><td width="200px">{{ 8AM_RAIN_FORECAST }}</td>
+        <td width="200px">0</td><td width="200px">{{ 7AM_RAIN_FORECAST }}</td><td width="200px">{{ 8AM_RAIN_FORECAST }}</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>(5,)</td><td>{{ 7AM_RAIN_PROBABILITY }}</td><td>{{ 8AM_RAIN_PROBABILITY }}</td>
+        <td>5</td><td>{{ 7AM_RAIN_PROBABILITY }}</td><td>{{ 8AM_RAIN_PROBABILITY }}</td>
     </tr>
 </table>
