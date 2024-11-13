@@ -53,7 +53,7 @@ if __name__ == "__main__":
         'HOUR_NOW': os.getenv('HOUR_NOW'),
         'HOUR_+1': str(int(os.getenv('HOUR_NOW', 0))+1),
         'HOUR_+2': str(int(os.getenv('HOUR_NOW', 0))+2),
-        '6AM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(5).weather_code)['description']
+        '6AM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(5).[2])['description']
         
         # Add more variables as needed
     }
