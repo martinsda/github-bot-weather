@@ -18,8 +18,8 @@ def get_weather_response(hour):
         weather_data = json.load(file)
 
     if 0<= hour <=23 :
-        precipitation_probability = weather_data['precipitation_probability'][hour],
-        precipitation = weather_data['precipitation'][hour],
+        precipitation_probability = weather_data['precipitation_probability'][hour]
+        precipitation = weather_data['precipitation'][hour]
         weather_code  = weather_data['weather_code'][hour]
         print(f"precipitation_prob {precipitation_probability} for hour {hour}")
         return precipitation_probability, precipitation, weather_code
