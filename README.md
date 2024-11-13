@@ -8,7 +8,7 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2024-11-13 18:29:19`
+`Lisbon, Portugal - 2024-11-13 18:46:44`
 
 <table>
     <tr>
@@ -36,7 +36,7 @@ Also prints the output of weather APIs in this readme.md file!
 </div>
 
 
-## Weather forcast 6AM to 11PM
+## Weather forcast 6AM to 8AM
 
 
 <table>
@@ -59,5 +59,59 @@ Also prints the output of weather APIs in this readme.md file!
     <tr>
         <th>Rain probability</th>
         <td>0%</td><td>0%</td><td>0%</td>
+    </tr>
+</table>
+
+
+## Weather forcast 9AM to 11AM
+
+
+<table>
+    <tr>
+        <th>Hour</th>
+        <td> 9AM </td><td> 10AM </td><td> 11AM </td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="http://openweathermap.org/img/wn/01d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/01d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/01d@2x.png"/></td>
+    </tr>
+    <tr>
+        <th>Conditions</th>
+        <td>Mainly Sunny</td><td>Mainly Sunny</td><td>Sunny</td>
+    </tr>
+    <tr>
+        <th>Rain forecast</th>
+        <td width="200px">0 mm</td><td width="200px">0 mm</td><td width="200px">0 mm</td>
+    </tr>
+    <tr>
+        <th>Rain probability</th>
+        <td>{{9AM_RAIN_PROBABILITY }}%</td><td>0%</td><td>0%</td>
+    </tr>
+</table>
+
+
+## Weather forcast 12PM to 2PM
+
+
+<table>
+    <tr>
+        <th>Hour</th>
+        <td> 12PM </td><td> 1PM </td><td> 2PM </td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="http://openweathermap.org/img/wn/01d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td>
+    </tr>
+    <tr>
+        <th>Conditions</th>
+        <td>Mainly Sunny</td><td>Cloudy</td><td>Cloudy</td>
+    </tr>
+    <tr>
+        <th>Rain forecast</th>
+        <td width="200px">0 mm</td><td width="200px">0 mm</td><td width="200px">0 mm</td>
+    </tr>
+    <tr>
+        <th>Rain probability</th>
+        <td>{{12PM_RAIN_PROBABILITY }}%</td><td>0%</td><td>8%</td>
     </tr>
 </table>
