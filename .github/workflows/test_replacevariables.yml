@@ -1,4 +1,4 @@
-name: Weather Hourly Consumer
+name: Test replace variables
 
 on:
   #push:
