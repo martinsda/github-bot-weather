@@ -21,7 +21,7 @@ def get_weather_response(hour):
         precipitation_probability = weather_data['precipitation_probability'][hour],
         precipitation = weather_data['precipitation'][hour],
         weather_code  = weather_data['weather_code'][hour]
-        print(f"precipitation {weather_data}")
+        print(f"precipitation_prob {precipitation_probability}")
         return precipitation_probability, precipitation, weather_code
     else:
         return "Invalid hour, please enter a value between 0 and 23."
