@@ -8,7 +8,7 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2024-11-13 18:17:40`
+`Lisbon, Portugal - 2024-11-13 18:29:19`
 
 <table>
     <tr>
@@ -46,18 +46,18 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="{{ 7AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 8AM_WEATHER_IMAGE }}"/></td>
+        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/01d@2x.png"/></td>
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Partly Cloudy</td><td>{{ 7AM_WEATHER_CONDITIONS }}</td><td>{{ 8AM_WEATHER_CONDITIONS }}</td>
+        <td>Partly Cloudy</td><td>Partly Cloudy</td><td>Sunny</td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0</td><td width="200px">{{ 7AM_RAIN_FORECAST }}</td><td width="200px">{{ 8AM_RAIN_FORECAST }}</td>
+        <td width="200px">0 mm</td><td width="200px">0 mm</td><td width="200px">0 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>5</td><td>{{ 7AM_RAIN_PROBABILITY }}</td><td>{{ 8AM_RAIN_PROBABILITY }}</td>
+        <td>0%</td><td>0%</td><td>0%</td>
     </tr>
 </table>
