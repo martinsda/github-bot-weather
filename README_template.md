@@ -72,12 +72,12 @@ Also prints the output of weather APIs in this readme.md file!
         <td> 9AM </td><td> 10AM </td><td> 11AM </td>
     </tr>
     <tr>
-        <th>Weather</th>
-        <td><img src="{{ 9AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 10AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 11AM_WEATHER_IMAGE }}"/></td>
-    </tr>
-    <tr>
         <th>Conditions</th>
         <td>{{ 9AM_WEATHER_CONDITIONS }}</td><td>{{ 10AM_WEATHER_CONDITIONS }}</td><td>{{ 11AM_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ 9AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 10AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 11AM_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -99,12 +99,12 @@ Also prints the output of weather APIs in this readme.md file!
         <td> 12PM </td><td> 1PM </td><td> 2PM </td>
     </tr>
     <tr>
-        <th>Weather</th>
-        <td><img src="{{ 12PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 1PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 2PM_WEATHER_IMAGE }}"/></td>
-    </tr>
-    <tr>
         <th>Conditions</th>
         <td>{{ 12PM_WEATHER_CONDITIONS }}</td><td>{{ 1PM_WEATHER_CONDITIONS }}</td><td>{{ 2PM_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ 12PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 1PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 2PM_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -124,12 +124,12 @@ Also prints the output of weather APIs in this readme.md file!
         <td> 3PM </td><td> 4PM </td><td> 5PM </td>
     </tr>
     <tr>
-        <th>Weather</th>
-        <td><img src="{{ 3PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 4PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 5PM_WEATHER_IMAGE }}"/></td>
-    </tr>
-    <tr>
         <th>Conditions</th>
         <td>{{ 3PM_WEATHER_CONDITIONS }}</td><td>{{ 4PM_WEATHER_CONDITIONS }}</td><td>{{ 5PM_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ 3PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 4PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 5PM_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -149,12 +149,12 @@ Also prints the output of weather APIs in this readme.md file!
         <td> 6PM </td><td> 7PM </td><td> 8PM </td>
     </tr>
     <tr>
-        <th>Weather</th>
-        <td><img src="{{ 6PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 7PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 8PM_WEATHER_IMAGE }}"/></td>
-    </tr>
-    <tr>
         <th>Conditions</th>
         <td>{{ 6PM_WEATHER_CONDITIONS }}</td><td>{{ 7PM_WEATHER_CONDITIONS }}</td><td>{{ 8PM_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ 6PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 7PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 8PM_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -174,12 +174,12 @@ Also prints the output of weather APIs in this readme.md file!
         <td> 9PM </td><td> 10PM </td><td> 11PM </td>
     </tr>
     <tr>
-        <th>Weather</th>
-        <td><img src="{{ 9PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 10PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 11PM_WEATHER_IMAGE }}"/></td>
-    </tr>
-    <tr>
         <th>Conditions</th>
         <td>{{ 9PM_WEATHER_CONDITIONS }}</td><td>{{ 10PM_WEATHER_CONDITIONS }}</td><td>{{ 11PM_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ 9PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 10PM_WEATHER_IMAGE }}"/></td><td><img src="{{ 11PM_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
