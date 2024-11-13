@@ -36,7 +36,7 @@ Also prints the output of weather APIs in this readme.md file!
 </div>
 
 
-## Weather forcast 6AM to 11PM
+## Weather forcast 6AM to 8AM
 
 
 <table>
@@ -59,5 +59,32 @@ Also prints the output of weather APIs in this readme.md file!
     <tr>
         <th>Rain probability</th>
         <td>{{ 6AM_RAIN_PROBABILITY }}%</td><td>{{ 7AM_RAIN_PROBABILITY }}%</td><td>{{ 8AM_RAIN_PROBABILITY }}%</td>
+    </tr>
+</table>
+
+
+## Weather forcast 9AM to 11AM
+
+
+<table>
+    <tr>
+        <th>Hour</th>
+        <td> 6AM </td><td> 7AM </td><td> 8AM </td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ 9AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 10AM_WEATHER_IMAGE }}"/></td><td><img src="{{ 11AM_WEATHER_IMAGE }}"/></td>
+    </tr>
+    <tr>
+        <th>Conditions</th>
+        <td>{{ 9AM_WEATHER_CONDITIONS }}</td><td>{{ 10AM_WEATHER_CONDITIONS }}</td><td>{{ 11AM_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Rain forecast</th>
+        <td width="200px">{{ 9AM_RAIN_FORECAST }} mm</td><td width="200px">{{ 10AM_RAIN_FORECAST }} mm</td><td width="200px">{{ 11AM_RAIN_FORECAST }} mm</td>
+    </tr>
+    <tr>
+        <th>Rain probability</th>
+        <td>{{9AM_RAIN_PROBABILITY }}%</td><td>{{ 10AM_RAIN_PROBABILITY }}%</td><td>{{ 11AM_RAIN_PROBABILITY }}%</td>
     </tr>
 </table>
