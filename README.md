@@ -8,7 +8,7 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2024-11-13 19:16:55`
+`Lisbon, Portugal - 2024-11-13 19:18:16`
 
 <table>
     <tr>
@@ -16,12 +16,12 @@ Also prints the output of weather APIs in this readme.md file!
         <td>19 Hours</td>
     </tr>
     <tr>
-        <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/01d@2x.png"/></td>
-    </tr>
-    <tr>
         <th>Conditions</th>
         <td>Sunny</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="http://openweathermap.org/img/wn/01d@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
