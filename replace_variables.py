@@ -4,12 +4,12 @@ from datetime import datetime as dt
 import pytz
 import json
 
-def get_weather_info(code):
+def get_weather_info(code, day_night='day'):
     with open('wmo_codes.json', 'r') as file:
         wmo_data = json.load(file)
     print(f"weather info for code {code}")
     if code in wmo_data:
-        return wmo_data[code]['day']
+        return wmo_data[code][day_night]
     else:
         return {"description": "Unknown code", "image": ""}
 
@@ -115,20 +115,20 @@ if __name__ == "__main__":
         '7PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(18)[2])['description'],
         '7PM_RAIN_FORECAST': str(get_weather_response(18)[1]),
         '7PM_RAIN_PROBABILITY': str(get_weather_response(18)[0]),
-        '8PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(19)[2])['image'],
+        '8PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(19)[2],'night')['image'],
         '8PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(19)[2])['description'],
         '8PM_RAIN_FORECAST': str(get_weather_response(19)[1]),
         '8PM_RAIN_PROBABILITY': str(get_weather_response(19)[0]),
 
-        '9PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(20)[2])['image'],
+        '9PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(20)[2],'night')['image'],
         '9PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(20)[2])['description'],
         '9PM_RAIN_FORECAST': str(get_weather_response(20)[1]),
         '9PM_RAIN_PROBABILITY': str(get_weather_response(20)[0]),
-        '10PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(21)[2])['image'],
+        '10PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(21)[2],'night')['image'],
         '10PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(21)[2])['description'],
         '10PM_RAIN_FORECAST': str(get_weather_response(21)[1]),
         '10PM_RAIN_PROBABILITY': str(get_weather_response(21)[0]),
-        '11PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(22)[2])['image'],
+        '11PM_WEATHER_IMAGE':  get_weather_info(get_weather_response(22)[2],'night')['image'],
         '11PM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(22)[2])['description'],
         '11PM_RAIN_FORECAST': str(get_weather_response(22)[1]),
         '11PM_RAIN_PROBABILITY': str(get_weather_response(22)[0])
