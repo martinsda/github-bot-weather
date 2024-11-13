@@ -16,12 +16,12 @@ Also prints the output of weather APIs in this readme.md file!
         <td>{{ HOUR_NOW }} Hours</td>
     </tr>
     <tr>
-        <th>Weather</th>
-        <td><img src="{{ CURR_WEATHER_IMAGE }}"/></td>
-    </tr>
-    <tr>
         <th>Conditions</th>
         <td>{{ CURR_WEATHER_CONDITIONS }}</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td><img src="{{ CURR_WEATHER_IMAGE }}"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
