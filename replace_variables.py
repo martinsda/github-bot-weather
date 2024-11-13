@@ -21,8 +21,7 @@ def get_weather_response(hour):
         precipitation_probability = weather_data['precipitation_probability'][hour],
         precipitation = weather_data['precipitation'][hour],
         weather_code  = weather_data['weather_code'][hour]
-        print(f"precipitation {precipitation} s")
-        print(f"precipitation_probability {precipitation_probability} s")
+        print(f"precipitation {weather_data}")
         return precipitation_probability, precipitation, weather_code
     else:
         return "Invalid hour, please enter a value between 0 and 23."
@@ -57,8 +56,8 @@ if __name__ == "__main__":
         'HOUR_+2': str(int(os.getenv('HOUR_NOW', 0))+2),
         '6AM_WEATHER_IMAGE':  get_weather_info(get_weather_response(5)[2])['image'],
         '6AM_WEATHER_CONDITIONS': get_weather_info(get_weather_response(5)[2])['description'],
-        '6AM_RAIN_FORECAST': str(int(get_weather_response(5)[1])),
-        '6AM_RAIN_PROBABILITY': str(int(get_weather_response(5)[0]))
+        '6AM_RAIN_FORECAST': str(get_weather_response(5)[1]),
+        '6AM_RAIN_PROBABILITY': str(get_weather_response(5)[0])
         
         # Add more variables as needed
     }
