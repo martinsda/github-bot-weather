@@ -33,10 +33,10 @@ jobs:
         OUTPUT_PATH: 'README.md'
         CITY: 'Lisbon'
         COUNTRY: 'Portugal'
-        WEATHER_CODE: ${{ needs.run-hourly-weather-consumer.outputs.weathercode }}
-        RAIN_FORECAST: ${{ needs.run-hourly-weather-consumer.outputs.rain }}
-        RAIN_PROBABILITY:  ${{ needs.run-hourly-weather-consumer.outputs.rain_prob }}
-        HOUR_NOW: ${{ needs.run-hourly-weather-consumer.outputs.hour_now }}
+        WEATHER_CODE: ${{ 1 }}
+        RAIN_FORECAST: ${{ 20 }}
+        RAIN_PROBABILITY:  ${{ 5 }}
+        HOUR_NOW: ${{ 12 }}
         # Add more environment variables as needed
       run: python replace_variables.py
     - name: Commit and push changes
