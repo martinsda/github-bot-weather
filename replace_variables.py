@@ -7,7 +7,7 @@ import json
 def get_weather_info(code):
     with open('wmo_codes.json', 'r') as file:
         wmo_data = json.load(file)
-    
+    print(f"weather info for code {code}")
     if code in wmo_data:
         return wmo_data[code]['day']
     else:
@@ -21,7 +21,7 @@ def get_weather_response(hour):
         precipitation_probability = weather_data['precipitation_probability'][hour],
         precipitation = weather_data['precipitation'][hour],
         weather_code  = weather_data['weather_code'][hour]
-        print(f"precipitation_prob {precipitation_probability}")
+        print(f"precipitation_prob {precipitation_probability} for hour {hour}")
         return precipitation_probability, precipitation, weather_code
     else:
         return "Invalid hour, please enter a value between 0 and 23."
