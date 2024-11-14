@@ -55,7 +55,7 @@ def get_forecast_weather(lat, long):
   hourly_data["precipitation"] = hourly_precipitation
   hourly_data["weather_code"] = hourly_weather_code
   hourly_dataframe = pd.DataFrame(data = hourly_data)
-  print(f"Round result {round(float(hourly_dataframe.precipitation[0]), 1)} ")
+  print(f"code result {hourly_dataframe.weather_code[0]} ")
   now = dt.now()
   json_data = {
     "precipitation": [
