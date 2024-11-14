@@ -42,10 +42,7 @@ if __name__ == "__main__":
     template_path = os.getenv('TEMPLATE_PATH')
     output_path = os.getenv('OUTPUT_PATH')
     code =  os.getenv('WEATHER_CODE')
-    if now.hour >= 19:
-        weather_info = get_weather_info(code,'night') 
-    else:
-        weather_info = get_weather_info(code)
+    weather_info = get_weather_info(code)
     variables = {
         'CITY': os.getenv('CITY'),
         'COUNTRY': os.getenv('COUNTRY'),
