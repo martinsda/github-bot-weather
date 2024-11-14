@@ -132,7 +132,7 @@ def get_forecast_weather(lat, long):
         int(hourly_dataframe.weather_code[20]), 
         int(hourly_dataframe.weather_code[21]), 
         int(hourly_dataframe.weather_code[22]), 
-        int(hourly_dataframe.weather_code[23])
+        int(hourly_dataframe.weather_code[23])],
     "time_now": now.strftime("%Y-%m-%d %H:%M:%S")
   }
   writejson_data(json_data)
