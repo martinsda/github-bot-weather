@@ -57,13 +57,7 @@ def get_forecast_weather(lat, long):
   hourly_dataframe = pd.DataFrame(data = hourly_data)
   now = dt.now()
   json_data = {
- "precipitation_probability": [str(int(hourly_dataframe.precipitation_probability[0])),
-        str(int(hourly_dataframe.precipitation_probability[1])), 
-        str(int(hourly_dataframe.precipitation_probability[2])), 
-        str(int(hourly_dataframe.precipitation_probability[3])), 
-        str(int(hourly_dataframe.precipitation_probability[4])), 
-        str(int(hourly_dataframe.precipitation_probability[5])), 
-        str(int(hourly_dataframe.precipitation_probability[6])), 
+ "precipitation_probability": [int(hourly_dataframe.precipitation_probability[0]), str(int(hourly_dataframe.precipitation_probability[1])), str(int(hourly_dataframe.precipitation_probability[2])), str(int(hourly_dataframe.precipitation_probability[3])), str(int(hourly_dataframe.precipitation_probability[4])), str(int(hourly_dataframe.precipitation_probability[5])), str(int(hourly_dataframe.precipitation_probability[6])), 
         str(int(hourly_dataframe.precipitation_probability[7])), 
         str(int(hourly_dataframe.precipitation_probability[8])), 
         str(int(hourly_dataframe.precipitation_probability[8])), 
