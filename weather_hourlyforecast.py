@@ -44,7 +44,7 @@ def get_forecast_weather(lat, long):
   hourly_precipitation_probability = hourly.Variables(0).ValuesAsNumpy()
   hourly_precipitation = hourly.Variables(1).ValuesAsNumpy()
   hourly_weather_code = hourly.Variables(2).ValuesAsNumpy()
-	
+ 
   hourly_data = {"date": pd.date_range(
   	start = pd.to_datetime(hourly.Time(), unit = "s", utc = True),
   	end = pd.to_datetime(hourly.TimeEnd(), unit = "s", utc = True),
@@ -55,6 +55,7 @@ def get_forecast_weather(lat, long):
   hourly_data["precipitation"] = hourly_precipitation
   hourly_data["weather_code"] = hourly_weather_code
   hourly_dataframe = pd.DataFrame(data = hourly_data)
+  print(f"Round result {round(float(hourly_dataframe.precipitation[0]), 1)} ")
   now = dt.now()
   json_data = {
  "precipitation_probability": [
