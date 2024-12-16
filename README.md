@@ -8,12 +8,12 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2024-12-16 16:33:54`
+`Lisbon, Portugal - 2024-12-16 17:22:44`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>16 Hours</td>
+        <td>17 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
@@ -175,15 +175,15 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Partly Cloudy</td><td>Cloudy</td><td>Cloudy</td>
+        <td>Cloudy</td><td>Cloudy</td><td>Cloudy</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/03n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.0 mm</td><td width="200px">0.0 mm</td><td width="200px">0.1 mm</td>
+        <td width="200px">0.0 mm</td><td width="200px">0.0 mm</td><td width="200px">0.0 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
