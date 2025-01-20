@@ -8,12 +8,12 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2025-01-20 12:47:34`
+`Lisbon, Portugal - 2025-01-20 13:28:15`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>12 Hours</td>
+        <td>13 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
@@ -25,11 +25,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">4.7 mm</td>
+        <td width="200px">4.1 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>78.0%</td>
+        <td>95.0%</td>
     </tr>
 </table>
 
@@ -81,7 +81,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">1.2 mm</td><td width="200px">0.5 mm</td><td width="200px">0.3 mm</td>
+        <td width="200px">1.2 mm</td><td width="200px">0.6 mm</td><td width="200px">0.5 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
@@ -100,15 +100,15 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Light Showers</td><td>Light Rain</td><td>Rain</td>
+        <td>Rain</td><td>Rain</td><td>Rain</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/09d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10d@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/10d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10d@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.6 mm</td><td width="200px">1.6 mm</td><td width="200px">3.0 mm</td>
+        <td width="200px">4.7 mm</td><td width="200px">4.1 mm</td><td width="200px">4.5 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
@@ -125,7 +125,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Rain</td><td>Rain</td><td>Light Rain</td>
+        <td>Rain</td><td>Light Rain</td><td>Light Rain</td>
     </tr>
     <tr>
         <th>Weather</th>
@@ -133,7 +133,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">3.6 mm</td><td width="200px">2.9 mm</td><td width="200px">1.9 mm</td>
+        <td width="200px">7.0 mm</td><td width="200px">0.8 mm</td><td width="200px">0.8 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
@@ -150,15 +150,15 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Light Rain</td><td>Light Rain</td><td>Light Rain</td>
+        <td>Light Rain</td><td>Light Showers</td><td>Light Rain</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/10d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/10d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/09n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">2.2 mm</td><td width="200px">2.4 mm</td><td width="200px">0.9 mm</td>
+        <td width="200px">0.5 mm</td><td width="200px">1.5 mm</td><td width="200px">1.1 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
@@ -175,15 +175,15 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Light Rain</td><td>Light Rain</td><td>Light Showers</td>
+        <td>Cloudy</td><td>Cloudy</td><td>Thunderstorm</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/10n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/09n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/03n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/11n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">1.8 mm</td><td width="200px">0.6 mm</td><td width="200px">0.9 mm</td>
+        <td width="200px">0.2 mm</td><td width="200px">0.0 mm</td><td width="200px">0.9 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
