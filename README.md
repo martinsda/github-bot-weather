@@ -8,12 +8,12 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2025-02-18 15:27:09`
+`Lisbon, Portugal - 2025-02-18 16:32:08`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>15 Hours</td>
+        <td>16 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
@@ -25,11 +25,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.8 mm</td>
+        <td width="200px">0.2 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>83.0%</td>
+        <td>58.0%</td>
     </tr>
 </table>
 
@@ -112,7 +112,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>65%</td><td>78%</td><td>75%</td>
+        <td>65%</td><td>73%</td><td>80%</td>
     </tr>
 </table>
 
@@ -137,7 +137,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>78%</td><td>60%</td><td>35%</td>
+        <td>83%</td><td>58%</td><td>28%</td>
     </tr>
 </table>
 
@@ -162,7 +162,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>20%</td><td>20%</td><td>18%</td>
+        <td>8%</td><td>8%</td><td>8%</td>
     </tr>
 </table>
 
@@ -187,7 +187,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>15%</td><td>28%</td><td>18%</td>
+        <td>8%</td><td>5%</td><td>20%</td>
     </tr>
 </table>
 
