@@ -8,16 +8,16 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2025-05-27 11:32:30`
+`Lisbon, Portugal - 2025-05-27 12:23:56`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>10 Hours</td>
+        <td>11 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Mainly Sunny</td>
+        <td>Sunny</td>
     </tr>
     <tr>
         <th>Weather</th>
@@ -73,7 +73,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Mainly Sunny</td><td>Sunny</td><td>Mainly Sunny</td>
+        <td>Mainly Sunny</td><td>Mainly Sunny</td><td>Sunny</td>
     </tr>
     <tr>
         <th>Weather</th>
@@ -100,7 +100,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Sunny</td><td>Sunny</td><td>Sunny</td>
+        <td>Sunny</td><td>Mainly Sunny</td><td>Sunny</td>
     </tr>
     <tr>
         <th>Weather</th>
