@@ -8,12 +8,12 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2025-09-27 17:29:46`
+`Lisbon, Portugal - 2025-09-27 18:22:04`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>16 Hours</td>
+        <td>17 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
@@ -25,11 +25,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.2 mm</td>
+        <td width="200px">0.3 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>40.0%</td>
+        <td>38.0%</td>
     </tr>
 </table>
 
@@ -108,11 +108,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.0 mm</td><td width="200px">0.1 mm</td><td width="200px">0.0 mm</td>
+        <td width="200px">0.0 mm</td><td width="200px">0.0 mm</td><td width="200px">0.0 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>15%</td><td>35%</td><td>50%</td>
+        <td>15%</td><td>35%</td><td>43%</td>
     </tr>
 </table>
 
@@ -133,11 +133,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.1 mm</td><td width="200px">0.1 mm</td><td width="200px">0.3 mm</td>
+        <td width="200px">0.1 mm</td><td width="200px">0.2 mm</td><td width="200px">0.3 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>48%</td><td>45%</td><td>40%</td>
+        <td>35%</td><td>40%</td><td>38%</td>
     </tr>
 </table>
 
@@ -162,7 +162,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>18%</td><td>18%</td><td>18%</td>
+        <td>18%</td><td>18%</td><td>8%</td>
     </tr>
 </table>
 
@@ -183,11 +183,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.1 mm</td><td width="200px">0.1 mm</td><td width="200px">0.2 mm</td>
+        <td width="200px">0.0 mm</td><td width="200px">0.1 mm</td><td width="200px">0.1 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>33%</td><td>48%</td><td>68%</td>
+        <td>18%</td><td>48%</td><td>73%</td>
     </tr>
 </table>
 
