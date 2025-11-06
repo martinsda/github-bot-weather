@@ -8,12 +8,12 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2025-11-06 14:30:30`
+`Lisbon, Portugal - 2025-11-06 15:31:38`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>14 Hours</td>
+        <td>15 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
