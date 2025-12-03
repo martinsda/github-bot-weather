@@ -8,7 +8,7 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2025-12-03 13:02:00`
+`Lisbon, Portugal - 2025-12-03 13:41:54`
 
 <table>
     <tr>
@@ -100,11 +100,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Cloudy</td><td>Partly Cloudy</td><td>Cloudy</td>
+        <td>Partly Cloudy</td><td>Cloudy</td><td>Cloudy</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -158,7 +158,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.0 mm</td><td width="200px">0.0 mm</td><td width="200px">0.0 mm</td>
+        <td width="200px">0.0 mm</td><td width="200px">0.0 mm</td><td width="200px">0.1 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
