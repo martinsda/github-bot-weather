@@ -8,12 +8,12 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2026-01-15 18:51:00`
+`Lisbon, Portugal - 2026-01-15 19:33:27`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>18 Hours</td>
+        <td>19 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
@@ -21,7 +21,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -29,7 +29,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>75.0%</td>
+        <td>33.0%</td>
     </tr>
 </table>
 
@@ -133,7 +133,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">1.6 mm</td><td width="200px">1.3 mm</td><td width="200px">0.4 mm</td>
+        <td width="200px">1.6 mm</td><td width="200px">1.5 mm</td><td width="200px">0.5 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
@@ -150,11 +150,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Partly Cloudy</td><td>Partly Cloudy</td><td>Mainly Clear</td>
+        <td>Partly Cloudy</td><td>Partly Cloudy</td><td>Partly Cloudy</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/01n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -175,11 +175,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Partly Cloudy</td><td>Mainly Clear</td><td>Mainly Clear</td>
+        <td>Partly Cloudy</td><td>Partly Cloudy</td><td>Mainly Clear</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/01n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/01n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/01n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
