@@ -8,7 +8,7 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2026-02-05 17:02:04`
+`Lisbon, Portugal - 2026-02-05 17:56:14`
 
 <table>
     <tr>
@@ -108,11 +108,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.2 mm</td><td width="200px">0.3 mm</td><td width="200px">0.3 mm</td>
+        <td width="200px">0.2 mm</td><td width="200px">0.2 mm</td><td width="200px">0.4 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>63%</td><td>60%</td><td>75%</td>
+        <td>63%</td><td>65%</td><td>73%</td>
     </tr>
 </table>
 
@@ -125,19 +125,19 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Light Showers</td><td>Partly Cloudy</td><td>Partly Cloudy</td>
+        <td>Light Showers</td><td>Light Showers</td><td>Partly Cloudy</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/09d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/09d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/09d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.3 mm</td><td width="200px">0.1 mm</td><td width="200px">0.0 mm</td>
+        <td width="200px">0.2 mm</td><td width="200px">0.3 mm</td><td width="200px">0.1 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>75%</td><td>75%</td><td>80%</td>
+        <td>78%</td><td>85%</td><td>75%</td>
     </tr>
 </table>
 
@@ -150,19 +150,19 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Partly Cloudy</td><td>Light Showers</td><td>Partly Cloudy</td>
+        <td>Light Showers</td><td>Partly Cloudy</td><td>Partly Cloudy</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/09n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/09d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.1 mm</td><td width="200px">0.2 mm</td><td width="200px">0.0 mm</td>
+        <td width="200px">0.2 mm</td><td width="200px">0.0 mm</td><td width="200px">0.0 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>65%</td><td>65%</td><td>55%</td>
+        <td>80%</td><td>80%</td><td>63%</td>
     </tr>
 </table>
 
@@ -175,11 +175,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Partly Cloudy</td><td>Partly Cloudy</td><td>Partly Cloudy</td>
+        <td>Partly Cloudy</td><td>Partly Cloudy</td><td>Mainly Clear</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/01n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
@@ -187,7 +187,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>75%</td><td>80%</td><td>60%</td>
+        <td>60%</td><td>58%</td><td>53%</td>
     </tr>
 </table>
 
