@@ -8,28 +8,28 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2026-02-12 19:16:04`
+`Lisbon, Portugal - 2026-02-12 20:47:32`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>19 Hours</td>
+        <td>20 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Cloudy</td>
+        <td>Light Rain</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/03n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/10n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.1 mm</td>
+        <td width="200px">2.0 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>73.0%</td>
+        <td>90.0%</td>
     </tr>
 </table>
 
@@ -158,7 +158,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.2 mm</td><td width="200px">0.1 mm</td><td width="200px">2.6 mm</td>
+        <td width="200px">0.3 mm</td><td width="200px">0.1 mm</td><td width="200px">2.0 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
@@ -175,15 +175,15 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Thunderstorm</td><td>Thunderstorm</td><td>Light Showers</td>
+        <td>Thunderstorm</td><td>Thunderstorm</td><td>Light Rain</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/11n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/11n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/09n@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/11n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/11n@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/10n@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">6.4 mm</td><td width="200px">1.5 mm</td><td width="200px">1.6 mm</td>
+        <td width="200px">3.6 mm</td><td width="200px">2.2 mm</td><td width="200px">2.8 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
