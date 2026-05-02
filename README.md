@@ -8,28 +8,28 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2026-05-02 10:16:41`
+`Lisbon, Portugal - 2026-05-02 12:00:51`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>9 Hours</td>
+        <td>11 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Cloudy</td>
+        <td>Light Showers</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/09d@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">No rain</td>
+        <td width="200px">0.4 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>85.0%</td>
+        <td>63.0%</td>
     </tr>
 </table>
 
@@ -58,7 +58,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>5%</td><td>25%</td><td>30%</td>
+        <td>5%</td><td>40%</td><td>78%</td>
     </tr>
 </table>
 
@@ -85,7 +85,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>30%</td><td>63%</td><td>53%</td>
+        <td>78%</td><td>90%</td><td>63%</td>
     </tr>
 </table>
 
@@ -112,7 +112,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>28%</td><td>10%</td><td>8%</td>
+        <td>35%</td><td>15%</td><td>0%</td>
     </tr>
 </table>
 
@@ -137,7 +137,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>3%</td><td>0%</td><td>0%</td>
+        <td>0%</td><td>0%</td><td>0%</td>
     </tr>
 </table>
 
@@ -187,7 +187,7 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>3%</td><td>3%</td><td>0%</td>
+        <td>0%</td><td>0%</td><td>3%</td>
     </tr>
 </table>
 
