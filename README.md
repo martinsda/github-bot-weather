@@ -8,7 +8,7 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2026-05-10 18:06:12`
+`Lisbon, Portugal - 2026-05-10 18:59:41`
 
 <table>
     <tr>
@@ -100,19 +100,19 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Cloudy</td><td>Partly Cloudy</td><td>Cloudy</td>
+        <td>Cloudy</td><td>Cloudy</td><td>Light Showers</td>
     </tr>
     <tr>
         <th>Weather</th>
-        <td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/02d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td>
+        <td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/03d@2x.png"/></td><td><img src="http://openweathermap.org/img/wn/09d@2x.png"/></td>
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.0 mm</td><td width="200px">0.1 mm</td><td width="200px">0.2 mm</td>
+        <td width="200px">0.0 mm</td><td width="200px">0.1 mm</td><td width="200px">0.3 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>65%</td><td>63%</td><td>70%</td>
+        <td>65%</td><td>90%</td><td>93%</td>
     </tr>
 </table>
 
@@ -133,11 +133,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.3 mm</td><td width="200px">0.5 mm</td><td width="200px">0.5 mm</td>
+        <td width="200px">0.3 mm</td><td width="200px">0.4 mm</td><td width="200px">0.5 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>75%</td><td>88%</td><td>90%</td>
+        <td>93%</td><td>98%</td><td>98%</td>
     </tr>
 </table>
 
@@ -158,11 +158,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.6 mm</td><td width="200px">0.5 mm</td><td width="200px">0.4 mm</td>
+        <td width="200px">0.5 mm</td><td width="200px">0.2 mm</td><td width="200px">0.4 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>93%</td><td>93%</td><td>83%</td>
+        <td>100%</td><td>100%</td><td>95%</td>
     </tr>
 </table>
 
@@ -183,11 +183,11 @@ Also prints the output of weather APIs in this readme.md file!
     </tr>
     <tr>
         <th>Rain forecast</th>
-        <td width="200px">0.3 mm</td><td width="200px">0.2 mm</td><td width="200px">0.2 mm</td>
+        <td width="200px">0.5 mm</td><td width="200px">0.4 mm</td><td width="200px">0.4 mm</td>
     </tr>
     <tr>
         <th>Rain probability</th>
-        <td>78%</td><td>80%</td><td>73%</td>
+        <td>98%</td><td>93%</td><td>85%</td>
     </tr>
 </table>
 
