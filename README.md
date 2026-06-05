@@ -8,16 +8,16 @@ Also prints the output of weather APIs in this readme.md file!
 <div align="center">
 
 ## Currently
-`Lisbon, Portugal - 2026-06-05 21:05:13`
+`Lisbon, Portugal - 2026-06-05 22:40:45`
 
 <table>
     <tr>
         <th>Hour</th>
-        <td>20 Hours</td>
+        <td>21 Hours</td>
     </tr>
     <tr>
         <th>Conditions</th>
-        <td>Mainly Clear</td>
+        <td>Clear</td>
     </tr>
     <tr>
         <th>Weather</th>
