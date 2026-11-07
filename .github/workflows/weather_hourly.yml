@@ -111,17 +111,16 @@ jobs:
 #      - run-hourly-weather-consumer
 #    if: needs.run-hourly-weather-consumer.outputs.rain != 'No rain' 
 #    steps:
-#    - name: Current weather - Notify twitter
-#      uses: nearform-actions/github-action-notify-twitter@master
+#    - name: Current weather - Notify Bluesky
+#      uses: zentered/bluesky-post-action@v0.4.1
 #      with:
-#        message: |
+#        post: |
 #          needs.run-hourly-weather-consumer.outputs.tweet_1
 #          needs.run-hourly-weather-consumer.outputs.tweet_2
 #          needs.run-hourly-weather-consumer.outputs.tweet_3
-#        twitter-app-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-#        twitter-app-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-#        twitter-access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-#        twitter-access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+#      env:
+#        BSKY_IDENTIFIER: ${{ secrets.BSKY_IDENTIFIER }}
+#        BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
 
         
         
