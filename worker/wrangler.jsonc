@@ -1,0 +1,20 @@
+{
+	"name": "weather-bot",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-01-01",
+	"workers_dev": false,
+	"triggers": {
+		"crons": ["0 6 * * *"]
+	},
+	"vars": {
+		"CITY": "Lisbon",
+		"OPEN_METEO_CITY_LAT": "38.7167",
+		"OPEN_METEO_CITY_LONG": "-9.1333",
+		"EMAIL_FROM": "weatherbot@axhome.casa",
+		"EMAIL_TO": "email.to.x@gmail.com",
+		"RAIN_EMAIL_THRESHOLD": "60"
+	},
+	"send_email": [
+		{ "name": "SEND_EMAIL", "destination_address": "email.to.x@gmail.com" }
+	]
+}

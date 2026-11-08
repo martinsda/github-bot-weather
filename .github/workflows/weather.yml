@@ -5,8 +5,11 @@ on:
   #  branches:
   #    - main
   workflow_dispatch:
-  schedule:
-    - cron: '0 6 * * *'  # Runs every day at 06
+  # Daily Bluesky post is now handled by the weather-bot Cloudflare Worker (see worker/),
+  # which runs on an exact cron schedule instead of GitHub Actions' delayed scheduler.
+  # Kept as a manual fallback via workflow_dispatch.
+  #schedule:
+  #  - cron: '0 6 * * *'  # Runs every day at 06
 
 jobs:
   run-weather-consumer:
