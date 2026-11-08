@@ -1,7 +1,7 @@
 # github-bot-weather
 A Bluesky bot that displays weather
 
-Follow-me @ [https://x.com/lxweatherbot](https://x.com/lxweatherbot)
+Follow-me @ [https://bsky.app/profile/martinsda.bsky.social](https://bsky.app/profile/martinsda.bsky.social)
 
 Also prints the output of weather APIs in this readme.md file!
 
